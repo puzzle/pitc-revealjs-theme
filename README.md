@@ -8,6 +8,9 @@ Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 3. Update the included theme in `index.html`
 4. Open `index.html` in a browser to view it
 
+## Styles
+There are multiple styles that you can use. Add a `master01-05` class to the slides to use them.
+
 ## Contributing
 1. Follow the "Full setup" instructions on https://github.com/hakimel/reveal.js#full-setup
 2. Copy or edit `puzzle.scss` in `css/theme/source`
