@@ -1,5 +1,7 @@
 # Puzzle ITC Revealjs Theme
 
+![Puzzle ITC Revealjs Theme](demo.png)
+
 Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 
 ## Usage with reveal-md

@@ -1,4 +1,4 @@
-# Slide 1
+## PITC Revealjs Theme
 
 * Item 1
 * Item 2
