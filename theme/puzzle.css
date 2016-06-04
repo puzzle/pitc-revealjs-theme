@@ -296,6 +296,28 @@ body {
 .reveal .slide-number {
   color: #333; }
 
+.reveal .intro h1 {
+  background: white;
+  display: table;
+  margin: 40px auto;
+  border-radius: 50%;
+  font-size: 4rem;
+  font-weight: bold; }
+
+.reveal .intro h1:before,
+.reveal .intro h1:after {
+  content: '\200B';
+  display: inline-block;
+  line-height: 0px;
+  padding-top: 50%;
+  padding-bottom: 50%; }
+
+.reveal .intro h1:before {
+  padding-left: 35px; }
+
+.reveal .intro h1:after {
+  padding-right: 35px; }
+
 /*********************************************
  * SLIDE MASTER
  *********************************************/
@@ -308,7 +330,7 @@ body {
   background-color: #1E5A96;
   background-repeat: no-repeat; }
 
-.master01 ~ section h1, .master01 ~ section h2, .master01 ~ section h3, .master01 ~ section h4, .master01 ~ section h5, .master01 ~ section h6 {
+.reveal .master01.intro h1 {
   color: #1E5A96; }
 
 .reveal .slide-background.master02 {
@@ -316,7 +338,7 @@ body {
   background-color: #3B7BBE;
   background-repeat: no-repeat; }
 
-.master02 ~ section h1, .master02 ~ section h2, .master02 ~ section h3, .master02 ~ section h4, .master02 ~ section h5, .master02 ~ section h6 {
+.reveal .master02.intro h1 {
   color: #3B7BBE; }
 
 .reveal .slide-background.master03 {
@@ -324,7 +346,7 @@ body {
   background-color: #238BCA;
   background-repeat: no-repeat; }
 
-.master03 ~ section h1, .master03 ~ section h2, .master03 ~ section h3, .master03 ~ section h4, .master03 ~ section h5, .master03 ~ section h6 {
+.reveal .master03.intro h1 {
   color: #238BCA; }
 
 .reveal .slide-background.master04 {
@@ -332,7 +354,7 @@ body {
   background-color: #2C97A6;
   background-repeat: no-repeat; }
 
-.master03 ~ section h1, .master03 ~ section h2, .master03 ~ section h3, .master03 ~ section h4, .master03 ~ section h5, .master03 ~ section h6 {
+.reveal .master04.intro h1 {
   color: #2C97A6; }
 
 .reveal .slide-background.master05 {
@@ -340,5 +362,5 @@ body {
   background-color: #69B978;
   background-repeat: no-repeat; }
 
-.master03 ~ section h1, .master03 ~ section h2, .master03 ~ section h3, .master03 ~ section h4, .master03 ~ section h5, .master03 ~ section h6 {
+.reveal .master05.intro h1 {
   color: #69B978; }

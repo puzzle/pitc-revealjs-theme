@@ -23,6 +23,15 @@ Just add this tag under your slides:
 <!-- .slide: class="master01" -->
 ```
 
+### Intro Slides
+The intro class will turn h1 into a white circle.
+```
+# 2
+## Second Topic
+<!-- .slide: class="master04 intro" -->
+```
+![Puzzle ITC Revealjs Theme](demo2.png)
+
 ## Installation (more flexibility)
 1. Download the latest version of reveal.js from https://github.com/hakimel/reveal.js/releases
 2. Unzip and copy `puzzle.css` into `css/theme`
