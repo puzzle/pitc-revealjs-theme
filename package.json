@@ -1,0 +1,24 @@
+{
+  "name": "pitc-revealjs-theme",
+  "version": "1.0.0",
+  "description": "Revealjs theme based upon the Puzzle style guide",
+  "scripts": {
+    "start": "npm-run-all --parallel build reveal-md",
+    "build": "node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
+    "reveal-md": "reveal-md demo.md --theme puzzle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puzzle/pitc-revealjs-theme.git"
+  },
+  "author": "Lorenz Bischof",
+  "bugs": {
+    "url": "https://github.com/puzzle/pitc-revealjs-theme/issues"
+  },
+  "homepage": "https://github.com/puzzle/pitc-revealjs-theme#readme",
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "npm-run-all": "^2.2.0",
+    "reveal-md": "0.0.29"
+  }
+}
