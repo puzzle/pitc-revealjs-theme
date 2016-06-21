@@ -6,13 +6,13 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background-color: #fff;
+  counter-reset: section; }
 
 .reveal {
   font-family: "Roboto", sans-serif;
@@ -296,27 +296,29 @@ body {
 .reveal .slide-number {
   color: #333; }
 
-.reveal .intro h1 {
-  background: white;
+.reveal .intro h1:before, .reveal .intro h2:before, .reveal .intro h3:before {
+  counter-increment: section;
+  content: counter(section);
+  background-color: white;
   display: table;
-  margin: 40px auto;
+  margin: 0 auto 40px;
   border-radius: 50%;
-  font-size: 4rem;
   font-weight: bold; }
 
-.reveal .intro h1:before,
-.reveal .intro h1:after {
-  content: '\200B';
-  display: inline-block;
-  line-height: 0px;
-  padding-top: 50%;
-  padding-bottom: 50%; }
-
 .reveal .intro h1:before {
-  padding-left: 35px; }
+  height: 150px;
+  width: 150px;
+  line-height: 150px; }
 
-.reveal .intro h1:after {
-  padding-right: 35px; }
+.reveal .intro h2:before {
+  height: 100px;
+  width: 100px;
+  line-height: 100px; }
+
+.reveal .intro h3:before {
+  height: 80px;
+  width: 80px;
+  line-height: 80px; }
 
 /*********************************************
  * SLIDE MASTER
@@ -330,7 +332,7 @@ body {
   background-color: #1E5A96;
   background-repeat: no-repeat; }
 
-.reveal .master01.intro h1 {
+.master01.intro h1:before, .master01.intro h2:before, .master01.intro h3:before {
   color: #1E5A96; }
 
 .reveal .slide-background.master02 {
@@ -338,7 +340,7 @@ body {
   background-color: #3B7BBE;
   background-repeat: no-repeat; }
 
-.reveal .master02.intro h1 {
+.master02.intro h1:before, .master02.intro h2:before, .master02.intro h3:before {
   color: #3B7BBE; }
 
 .reveal .slide-background.master03 {
@@ -346,7 +348,7 @@ body {
   background-color: #238BCA;
   background-repeat: no-repeat; }
 
-.reveal .master03.intro h1 {
+.master03.intro h1:before, .master03.intro h2:before, .master03.intro h3:before {
   color: #238BCA; }
 
 .reveal .slide-background.master04 {
@@ -354,7 +356,7 @@ body {
   background-color: #2C97A6;
   background-repeat: no-repeat; }
 
-.reveal .master04.intro h1 {
+.master04.intro h1:before, .master04.intro h2:before, .master04.intro h3:before {
   color: #2C97A6; }
 
 .reveal .slide-background.master05 {
@@ -362,5 +364,5 @@ body {
   background-color: #69B978;
   background-repeat: no-repeat; }
 
-.reveal .master05.intro h1 {
+.master05.intro h1:before, .master05.intro h2:before, .master05.intro h3:before {
   color: #69B978; }

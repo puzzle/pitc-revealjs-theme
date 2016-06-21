@@ -47,9 +47,8 @@ Just add this tag under your slides:
 ```
 
 ### Intro Slides
-The intro class will turn h1 into a white circle.
+The intro class will add a numbered circle above the header.
 ```
-# 2
 ## Second Topic
 <!-- .slide: class="master04 intro" -->
 ```

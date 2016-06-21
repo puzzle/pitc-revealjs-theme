@@ -8,7 +8,6 @@
 
 ---
 
-# 1
 ## First Topic
 
 <!-- .slide: class="master02 intro" -->
@@ -31,7 +30,6 @@ Lorem ipsum
 
 ---
 
-# 2
 ## Second Topic
 
 <!-- .slide: class="master04 intro" -->
