@@ -296,6 +296,9 @@ body {
 .reveal .slide-number {
   color: #333; }
 
+section.intro.past {
+  display: block !important; }
+
 .reveal .intro h1:before, .reveal .intro h2:before, .reveal .intro h3:before {
   counter-increment: section;
   content: counter(section);

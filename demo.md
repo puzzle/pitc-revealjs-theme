@@ -41,3 +41,17 @@ Lorem ipsum
 Lorem _ipsum_.
 
 <!-- .slide: class="master04" -->
+
+---
+
+## Third Topic
+
+<!-- .slide: class="master04 intro" -->
+
+---
+
+# Slide 4
+
+Lorem _ipsum_.
+
+<!-- .slide: class="master04" -->

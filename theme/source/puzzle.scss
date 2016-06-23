@@ -430,6 +430,11 @@ body {
   color: $linkColor;
 }
 
+// This needs to stay block because of the css counters
+section.intro.past {
+    display: block !important;
+}
+
 .reveal .intro h1:before, .reveal .intro h2:before, .reveal .intro h3:before {
   counter-increment: section;
   content: counter(section);
