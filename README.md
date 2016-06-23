@@ -9,7 +9,7 @@ Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
 
-    ```reveal-md demo.md --theme https://rawgit.com/puzzle/pitc-revealjs-theme/master/theme/puzzle.css```
+    ```reveal-md demo.md --theme https://rawgit.com/puzzle/pitc-revealjs-theme/1.0.0/theme/puzzle.css```
 
 Optional: Add an alias in your `.bashrc`:
 ```
@@ -24,14 +24,15 @@ alias reveal-md='reveal-md --theme https://rawgit.com/puzzle/pitc-revealjs-theme
     ...
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "reveal-md": "reveal-md demo.md --theme https://rawgit.com/puzzle/pitc-revealjs-theme/master/theme/puzzle.css"
+        "reveal-md": "reveal-md demo.md --theme https://rawgit.com/puzzle/pitc-revealjs-theme/1.0.0/theme/puzzle.css"
     },
     ...
     ```
 3. Open the presentation: `npm run reveal-md`
 
+You may also use `--theme puzzle` if you copy the theme directory into your project. More information: https://github.com/webpro/reveal-md
 
-You may also use `--theme puzzle` if you copy the theme directory into your project. More information at: https://github.com/webpro/reveal-md
+The releases use Semantic Versioning. More information: http://semver.org/
 
 ## Styles
 There are multiple styles that you can use:
