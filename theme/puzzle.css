@@ -41,7 +41,7 @@ body {
   color: #444;
   font-family: "Roboto Slab", serif;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
@@ -51,10 +51,10 @@ body {
   color: #fff; }
 
 .reveal h1 {
-  font-size: 6rem; }
+  font-size: 5rem; }
 
 .reveal h2 {
-  font-size: 4rem; }
+  font-size: 3.5rem; }
 
 .reveal h3 {
   font-size: 3rem; }
@@ -306,22 +306,10 @@ section.intro.past {
   display: table;
   margin: 0 auto 40px;
   border-radius: 50%;
-  font-weight: bold; }
-
-.reveal .intro h1:before {
-  height: 150px;
-  width: 150px;
-  line-height: 150px; }
-
-.reveal .intro h2:before {
-  height: 100px;
-  width: 100px;
-  line-height: 100px; }
-
-.reveal .intro h3:before {
-  height: 80px;
-  width: 80px;
-  line-height: 80px; }
+  font-weight: bold;
+  height: 1.5em;
+  width: 1.5em;
+  line-height: 1.5em; }
 
 /*********************************************
  * SLIDE MASTER

@@ -48,15 +48,15 @@ $blockMargin: 2.5rem;
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Roboto Slab', serif;
 $headingColor: $mainColor;
-$headingLineHeight: 1.5em;
+$headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 6rem;
-$heading2Size: 4rem;
+$heading1Size: 5rem;
+$heading2Size: 3.5rem;
 $heading3Size: 3rem;
 $heading4Size: 2rem;
 
@@ -443,24 +443,11 @@ section.intro.past {
   margin: 0 auto 40px;
   border-radius: 50%;
   font-weight: bold;
+  height: 1.5em;
+  width: 1.5em;
+  line-height: 1.5em;
 }
 
-.reveal .intro h1:before {
-  height: 150px;
-  width: 150px;
-  line-height: 150px;
-}
-
-.reveal .intro h2:before {
-  height: 100px;
-  width: 100px;
-  line-height: 100px;
-}
-.reveal .intro h3:before {
-  height: 80px;
-  width: 80px;
-  line-height: 80px;
-}
 
 /*********************************************
  * SLIDE MASTER
