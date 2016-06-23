@@ -1,4 +1,4 @@
-## PITC Revealjs Theme
+# PITC Revealjs Theme
 
 * Item 1
 * Item 2
@@ -8,7 +8,7 @@
 
 ---
 
-## First Topic
+# First Topic
 
 <!-- .slide: class="master02 intro" -->
 
@@ -30,7 +30,7 @@ Lorem ipsum
 
 ---
 
-## Second Topic
+# Second Topic
 
 <!-- .slide: class="master04 intro" -->
 
@@ -44,7 +44,7 @@ Lorem _ipsum_.
 
 ---
 
-## Third Topic
+# Third Topic
 
 <!-- .slide: class="master04 intro" -->
 
