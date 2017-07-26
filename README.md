@@ -30,7 +30,7 @@ alias reveal-md='reveal-md --theme https://rawgit.com/puzzle/pitc-revealjs-theme
     ```
 3. Open the presentation: `npm run reveal-md`
 
-You may also use `--theme puzzle` if you copy the theme directory into your project. More information: https://github.com/webpro/reveal-md
+You may also use `--theme puzzle` if you copy the theme directory into your project. More information (PDF and static site generation): https://github.com/webpro/reveal-md
 
 The releases use Semantic Versioning. More information: http://semver.org/
 
