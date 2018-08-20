@@ -11,18 +11,21 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-color: #3B7BBE;
+  background-color: #fff;
   counter-reset: section;
   font-family: "Roboto", sans-serif; }
 
 body > a::before {
   content: "";
   display: inline-block;
-  background: url('data:image/svg+xml;utf8,<svg style="enable-background:new 0 0 50 50;" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css" ><![CDATA[* {fill: %23fff;}]]></style><g id="Layer_1"><path d="M26,3V1h-2v2H3H1v2h2v26H1v2h2h17.471L14,47.791V49h2v-0.791L22.654,33H24v16h2V33h1.346L34,48.209V49h2v-1.209L29.529,33   H47h2v-2h-2V5h2V3h-2H26z M45,31H5V5h40V31z"/>  <path d="M16,28c4.411,0,8-3.589,8-8v-1h-7v-7h-1c-4.411,0-8,3.589-8,8S11.589,28,16,28z M15,14.083V21h6.917   c-0.478,2.834-2.949,5-5.917,5c-3.309,0-6-2.691-6-6C10,17.032,12.166,14.561,15,14.083z"/>  <path d="M28,16c0-4.411-3.589-8-8-8h-1v9h9V16z M21,15v-4.917c2.509,0.422,4.494,2.408,4.917,4.917H21z"/>  <rect height="2" width="10" x="31" y="10"/>  <rect height="2" width="10" x="31" y="15"/>  <rect height="2" width="10" x="31" y="20"/></g><g/></svg>');
+  background: url('data:image/svg+xml;utf8,<svg style="enable-background:new 0 0 50 50;" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css" ><![CDATA[* {fill: %23444;}]]></style><g id="Layer_1"><path d="M26,3V1h-2v2H3H1v2h2v26H1v2h2h17.471L14,47.791V49h2v-0.791L22.654,33H24v16h2V33h1.346L34,48.209V49h2v-1.209L29.529,33   H47h2v-2h-2V5h2V3h-2H26z M45,31H5V5h40V31z"/>  <path d="M16,28c4.411,0,8-3.589,8-8v-1h-7v-7h-1c-4.411,0-8,3.589-8,8S11.589,28,16,28z M15,14.083V21h6.917   c-0.478,2.834-2.949,5-5.917,5c-3.309,0-6-2.691-6-6C10,17.032,12.166,14.561,15,14.083z"/>  <path d="M28,16c0-4.411-3.589-8-8-8h-1v9h9V16z M21,15v-4.917c2.509,0.422,4.494,2.408,4.917,4.917H21z"/>  <rect height="2" width="10" x="31" y="10"/>  <rect height="2" width="10" x="31" y="15"/>  <rect height="2" width="10" x="31" y="20"/></g><g/></svg>');
   width: 2em;
   height: 2em;
   vertical-align: middle;
   margin-right: 0.5em; }
+
+body > a {
+  color: #444; }
 
 .reveal {
   font-family: "Roboto", sans-serif;
@@ -309,7 +312,9 @@ body > a::before {
 section.intro.past {
   display: block !important; }
 
-.reveal .intro h1:before, .reveal .intro h2:before, .reveal .intro h3:before {
+.reveal .intro h1:before,
+.reveal .intro h2:before,
+.reveal .intro h3:before {
   counter-increment: section;
   content: counter(section);
   background-color: white;
@@ -324,46 +329,53 @@ section.intro.past {
 /*********************************************
  * SLIDE MASTER
  *********************************************/
+.reveal .slide-background {
+  background: url('data:image/svg+xml;utf8,<svg width="312" height="147" viewBox="0 0 312 147" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M311.8 147H104.36L208.08 43.28 311.78 147" fill="%2347B8B2"/><path d="M238.46 73.66L311.8.32V147l-73.34-73.34" fill="%233D9ECC"/><path d="M104.36 147l51.86-51.86H52.5L.64 147h103.72" fill="%23369096"/></g></svg>') bottom right no-repeat, url('data:image/svg+xml;utf8,<svg width="156" height="208" viewBox="0 0 156 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.1 207.15V-.28l103.7 103.72L.1 207.14" fill="%232D81B6"/><path d="M.1-.28h103.7L51.96 51.58.1-.28" fill="%2347B8B2"/><path d="M155.67 51.58l-51.86 51.86-51.85-51.86L103.8-.28l51.87 51.86" fill="%233D9ECC"/></g></svg>') top left no-repeat; }
+
 .reveal .slide-background.master-white {
-  background-color: #fff;
-  background-repeat: no-repeat; }
+  background-color: #fff; }
 
 .reveal .slide-background.master01 {
-  background: url('data:image/svg+xml;utf8,<svg width="312" height="147" viewBox="0 0 312 147" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M311.8 147H104.36L208.08 43.28 311.78 147" fill="%2347B8B2"/><path d="M238.46 73.66L311.8.32V147l-73.34-73.34" fill="%233D9ECC"/><path d="M104.36 147l51.86-51.86H52.5L.64 147h103.72" fill="%23369096"/></g></svg>') bottom right, url('data:image/svg+xml;utf8,<svg width="156" height="208" viewBox="0 0 156 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.1 207.15V-.28l103.7 103.72L.1 207.14" fill="%232D81B6"/><path d="M.1-.28h103.7L51.96 51.58.1-.28" fill="%2347B8B2"/><path d="M155.67 51.58l-51.86 51.86-51.85-51.86L103.8-.28l51.87 51.86" fill="%233D9ECC"/></g></svg>') top left;
-  background-color: #1E5A96;
-  background-repeat: no-repeat; }
+  background: url('data:image/svg+xml;utf8,<svg width="312" height="147" viewBox="0 0 312 147" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M311.8 147H104.36L208.08 43.28 311.78 147" fill="%2347B8B2"/><path d="M238.46 73.66L311.8.32V147l-73.34-73.34" fill="%233D9ECC"/><path d="M104.36 147l51.86-51.86H52.5L.64 147h103.72" fill="%23369096"/></g></svg>') bottom right no-repeat, url('data:image/svg+xml;utf8,<svg width="156" height="208" viewBox="0 0 156 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.1 207.15V-.28l103.7 103.72L.1 207.14" fill="%232D81B6"/><path d="M.1-.28h103.7L51.96 51.58.1-.28" fill="%2347B8B2"/><path d="M155.67 51.58l-51.86 51.86-51.85-51.86L103.8-.28l51.87 51.86" fill="%233D9ECC"/></g></svg>') top left no-repeat;
+  background-color: #1E5A96; }
 
-.master01.intro h1:before, .master01.intro h2:before, .master01.intro h3:before {
+.master01.intro h1:before,
+.master01.intro h2:before,
+.master01.intro h3:before {
   color: #1E5A96; }
 
 .reveal .slide-background.master02 {
-  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%231E5A96"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%23238BCA"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%233FA8E0"/></g></svg>') top right, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%23238BCA"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%231E5A96"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%233FA8E0"/></g></svg>') top left;
-  background-color: #3B7BBE;
-  background-repeat: no-repeat; }
+  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%231E5A96"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%23238BCA"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%233FA8E0"/></g></svg>') top right no-repeat, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%23238BCA"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%231E5A96"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%233FA8E0"/></g></svg>') top left no-repeat;
+  background-color: #3B7BBE; }
 
-.master02.intro h1:before, .master02.intro h2:before, .master02.intro h3:before {
+.master02.intro h1:before,
+.master02.intro h2:before,
+.master02.intro h3:before {
   color: #3B7BBE; }
 
 .reveal .slide-background.master03 {
-  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%233FA8E0"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%233B7BBE"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>') top right, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%233FA8E0"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%2346BCC0"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%233B7BBE"/></g></svg>') top left;
-  background-color: #238BCA;
-  background-repeat: no-repeat; }
+  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%233FA8E0"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%233B7BBE"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>') top right no-repeat, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%233FA8E0"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%2346BCC0"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%233B7BBE"/></g></svg>') top left no-repeat;
+  background-color: #238BCA; }
 
-.master03.intro h1:before, .master03.intro h2:before, .master03.intro h3:before {
+.master03.intro h1:before,
+.master03.intro h2:before,
+.master03.intro h3:before {
   color: #238BCA; }
 
 .reveal .slide-background.master04 {
-  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%23238BCA"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%233FA8E0"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>') top right, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%2346BCC0"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%23238BCA"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%233FA8E0"/></g></svg>') top left;
-  background-color: #2C97A6;
-  background-repeat: no-repeat; }
+  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%23238BCA"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%233FA8E0"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>') top right no-repeat, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%2346BCC0"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%23238BCA"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%233FA8E0"/></g></svg>') top left no-repeat;
+  background-color: #2C97A6; }
 
-.master04.intro h1:before, .master04.intro h2:before, .master04.intro h3:before {
+.master04.intro h1:before,
+.master04.intro h2:before,
+.master04.intro h3:before {
   color: #2C97A6; }
 
 .reveal .slide-background.master05 {
-  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%232C97A6"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%2361B44B"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>') top right, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%2346BCC0"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%232C97A6"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%2361B44B"/></g></svg>') top left;
-  background-color: #69B978;
-  background-repeat: no-repeat; }
+  background: url('data:image/svg+xml;utf8,<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%232C97A6"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%2361B44B"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>') top right no-repeat, url('data:image/svg+xml;utf8,<svg width="208" height="208" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M.07-.22H207.5l-103.7 103.8L.06-.2" fill="%2346BCC0"/><path d="M.08 103.6V-.23l51.85 51.9-51.85 51.9" fill="%232C97A6"/><path d="M51.93 155.5L.08 207.4V103.6l51.85-51.92V155.5" fill="%2361B44B"/></g></svg>') top left no-repeat;
+  background-color: #69B978; }
 
-.master05.intro h1:before, .master05.intro h2:before, .master05.intro h3:before {
+.master05.intro h1:before,
+.master05.intro h2:before,
+.master05.intro h3:before {
   color: #69B978; }
