@@ -18,6 +18,7 @@
 // Include theme-specific fonts
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,500");
 @import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 
 // Override theme settings (see ../template/settings.scss)
 // Background of the presentation
@@ -35,16 +36,14 @@ $cornerTopLeft05: '<svg width="208" height="208" viewBox="0 0 208 208" xmlns="ht
 $cornerTopRight05: '<svg width="178" height="208" viewBox="0 0 178 208" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M177.84-.22V207.4L73.9 103.6 177.83-.23" fill="%232C97A6"/><path d="M104.33 73.19L30.83-.23h147l-73.5 73.4" fill="%2361B44B"/><path d="M52.36 125.1L.38 73.2l51.98-51.92 51.97 51.9-51.97 51.9" fill="%2346BCC0"/></g></svg>';
 $icon: '<svg style="enable-background:new 0 0 50 50;" version="1.1" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css" ><![CDATA[* {fill: %23444;}]]></style><g id="Layer_1"><path d="M26,3V1h-2v2H3H1v2h2v26H1v2h2h17.471L14,47.791V49h2v-0.791L22.654,33H24v16h2V33h1.346L34,48.209V49h2v-1.209L29.529,33   H47h2v-2h-2V5h2V3h-2H26z M45,31H5V5h40V31z"/>  <path d="M16,28c4.411,0,8-3.589,8-8v-1h-7v-7h-1c-4.411,0-8,3.589-8,8S11.589,28,16,28z M15,14.083V21h6.917   c-0.478,2.834-2.949,5-5.917,5c-3.309,0-6-2.691-6-6C10,17.032,12.166,14.561,15,14.083z"/>  <path d="M28,16c0-4.411-3.589-8-8-8h-1v9h9V16z M21,15v-4.917c2.509,0.422,4.494,2.408,4.917,4.917H21z"/>  <rect height="2" width="10" x="31" y="10"/>  <rect height="2" width="10" x="31" y="15"/>  <rect height="2" width="10" x="31" y="20"/></g><g/></svg>';
 // Primary/body text
-$mainFont: 'Roboto',
-sans-serif;
+$mainFont: 'Roboto', sans-serif;
 $mainFontSize: 3rem;
 $mainColor: #444;
 // Vertical spacing between blocks of text
 $blockMargin: 2.5rem;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'Roboto Slab',
-serif;
+$headingFont: 'Roboto Slab', serif;
 $headingColor: $mainColor;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
@@ -56,6 +55,10 @@ $heading1Size: 5rem;
 $heading2Size: 3.5rem;
 $heading3Size: 3rem;
 $heading4Size: 2rem;
+
+// Code
+$codeFont: 'Roboto Mono', monospace;
+
 // Links and actions
 $linkColor: #333;
 $linkColorHover: #111;
@@ -252,14 +255,21 @@ body>a {
   margin: $blockMargin auto;
   text-align: left;
   font-size: 0.55em;
-  font-family: monospace;
+  font-family: $codeFont;
+  letter-spacing: -0.08em;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
 .reveal code {
-  font-family: monospace;
+  font-family: $codeFont;
+  background-color: #000;
+  font-size: 50%;
+  color: #888;
+  padding: 0.3em;
+  letter-spacing: -0.08em;
+  line-height: 1.5em;
 }
 
 .reveal pre code {

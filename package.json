@@ -4,8 +4,9 @@
   "description": "Revealjs theme based upon the Puzzle style guide",
   "scripts": {
     "start": "npm-run-all --parallel build reveal-md",
-    "build": "node-sass theme/source/puzzle.scss theme/puzzle.css; node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
-    "reveal-md": "reveal-md --watch --theme theme/puzzle.css"
+    "build": "node-sass source/puzzle.scss dist/puzzle.css",
+    "dev": "node-sass theme/source/puzzle.scss dist/puzzle.css; node-sass --watch source/puzzle.scss dist/puzzle.css",
+    "reveal-md": "reveal-md --watch --theme dist/puzzle.css"
   },
   "repository": {
     "type": "git",
