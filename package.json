@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm-run-all --parallel build reveal-md",
     "build": "node-sass source/puzzle.scss dist/puzzle.css",
-    "dev": "node-sass theme/source/puzzle.scss dist/puzzle.css; node-sass --watch source/puzzle.scss dist/puzzle.css",
+    "dev": "node-sass source/puzzle.scss dist/puzzle.css; node-sass --watch source/puzzle.scss dist/puzzle.css",
     "reveal-md": "reveal-md --watch --theme dist/puzzle.css"
   },
   "repository": {
