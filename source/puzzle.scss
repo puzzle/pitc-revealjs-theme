@@ -60,8 +60,9 @@ $heading4Size: 2rem;
 $codeFont: 'Roboto Mono', monospace;
 
 // Links and actions
-$linkColor: #333;
-$linkColorHover: #111;
+$linkColor: #428bca;
+$linkColorHover: #193c5a;
+
 // Text selection
 $selectionBackgroundColor: #69B978;
 $selectionColor: #fff;
@@ -85,8 +86,8 @@ body>a::before {
   margin-right: 0.5em;
 }
 
-body>a {
-  color: #444;
+body > a {
+  color: #428bca;
 }
 
 .reveal {
