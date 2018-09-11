@@ -334,19 +334,14 @@ body > a {
 .reveal a {
   color: $linkColor;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 1em;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease;
+  transition: all 1s;
+  transform: scale(1);
+  display: inline-block;
 }
 
 .reveal a:hover {
   color: $linkColorHover;
-  text-shadow: none;
-  border: none;
+  transform: scale(1.1)
 }
 
 .reveal.has-dark-background {
