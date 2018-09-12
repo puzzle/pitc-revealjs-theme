@@ -266,12 +266,13 @@ body > a {
 
 .reveal code {
   font-family: $codeFont;
-  background-color: #000;
+  background-color: #333;
   font-size: 50%;
-  color: #888;
+  color: #aaa;
   padding: 0.3em;
   letter-spacing: -0.08em;
   line-height: 1.5em;
+  vertical-align: middle;
 }
 
 .reveal pre code {
