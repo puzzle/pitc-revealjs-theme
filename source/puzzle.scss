@@ -534,3 +534,9 @@ section.intro.past {
 .master05.intro h3:before {
   color: #69B978;
 }
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
