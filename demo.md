@@ -8,6 +8,12 @@
 
 ---
 
+# Simple Slide
+
+Stuff
+
+---
+
 # First Topic
 
 <!-- .slide: class="master02 intro" -->
