@@ -13,6 +13,8 @@
 body {
   background-color: #fff;
   counter-reset: section; }
+  body > a {
+    color: #444; }
 
 .reveal {
   font-family: "Roboto", sans-serif;

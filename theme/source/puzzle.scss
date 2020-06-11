@@ -77,6 +77,10 @@ $selectionColor: #fff;
 body {
   background-color: $backgroundColor;
   counter-reset: section;
+
+  > a {
+    color: $mainColor
+  }
 }
 
 .reveal {
