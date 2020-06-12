@@ -9,11 +9,11 @@ Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
 
-    ```reveal-md demo.md --watch --theme https://rawgit.com/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css```
+    ```reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css```
 
 Optional: Add an alias in your `.bashrc`:
 ```
-alias reveal-md='reveal-md --watch --theme https://rawgit.com/puzzle/pitc-revealjs-theme/master/theme/puzzle.css'
+alias reveal-md='reveal-md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/master/theme/puzzle.css'
 ```
 
 ### Local (per project)
@@ -24,7 +24,7 @@ alias reveal-md='reveal-md --watch --theme https://rawgit.com/puzzle/pitc-reveal
     ...
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "reveal-md": "reveal-md demo.md --watch --theme https://rawgit.com/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css"
+        "reveal-md": "reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css"
     },
     ...
     ```
