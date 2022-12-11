@@ -19,6 +19,6 @@
   "devDependencies": {
     "node-sass": "^3.13.1",
     "npm-run-all": "^2.3.0",
-    "reveal-md": "^0.4.3"
+    "reveal-md": "^5.4.0"
   }
 }
