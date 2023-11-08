@@ -1,0 +1,36 @@
+on: push
+  #  push:
+  #    branches:
+  #      - master
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - id: git-tag
+        name: Split tag
+        if: github.ref_type == 'tag'
+        uses: auguwu/git-tag-action@master
+      - if: github.ref_type == 'tag'
+        run: |
+          mkdir -p build/${{ steps.git-tag.outputs.git-tag }}
+          cp theme/puzzle.css build/${{ steps.git-tag.outputs.major }}
+          mkdir -p build/${{ github.ref_name }}
+          cp theme/puzzle.css build/${{ github.ref_name }}
+      - run: |
+          # Short sha
+          mkdir -p build/${GITHUB_SHA::7}
+          cp theme/puzzle.css build/${GITHUB_SHA::7}
+          # Long sha
+          mkdir -p build/${GITHUB_SHA}
+          cp theme/puzzle.css build/${GITHUB_SHA}
+          # Latest
+          mkdir -p build/latest
+          cp theme/puzzle.css build/latest
+          ls -R build
+
+
+
+
