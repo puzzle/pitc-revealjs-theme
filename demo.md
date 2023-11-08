@@ -1,57 +1,35 @@
-# PITC Revealjs Theme
+<h1>Präsentation <br /> <span class="alt">Puzzle ICT</span></h1>
 
-* Item 1
-* Item 2
-* Item 3
+### Thema
 
 <!-- .slide: class="master01" -->
 
 ---
 
-# First Topic
+# Agenda
 
-<!-- .slide: class="master02 intro" -->
-
----
-
-# Slide 2
-
-Lorem ipsum.
-
+* Masteransicht	
+* Icons
+* Content mit/ohne Bullet Points
+* Bilder
 <!-- .slide: class="master02" -->
 
-----
+---
 
-## Vertical Slide
-
-Lorem ipsum
-
-<!-- .slide: class="master03" -->
+<h1>You are the<br /> <span class="alt">Master!</span></h1>
+<!-- .slide: class="master03" data-intro="Thema 1" -->
 
 ---
 
-# Second Topic
+## Masteransicht
 
-<!-- .slide: class="master04 intro" -->
-
----
-
-# Slide 3
-
-Lorem _ipsum_.
-
-<!-- .slide: class="master04" -->
+* Um das Corporate Design von Puzzle konsistent zu halten, verwenden wir für Präsentationen diese Folienvorlage.
+* Dieses Template stellt eine praktische Übersicht dar und hilft dir beim Erstellen deiner Präsentation.
+* In der Masteransicht findest du alle Folienvorlagen, die es gibt.
+* Du kannst die Folien per «copy and paste» in deine Präsentation integrieren.
+<!-- .slide: class="master-white" -->
 
 ---
 
-# Third Topic
-
-<!-- .slide: class="master04 intro" -->
-
----
-
-# Slide 4
-
-Lorem _ipsum_.
-
+<h1>Hintergründe<br /> deiner <span class="alt-2">Wahl</span></h1>
 <!-- .slide: class="master04" -->

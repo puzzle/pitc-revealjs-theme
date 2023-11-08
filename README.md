@@ -1,6 +1,6 @@
 # Puzzle ITC Revealjs Theme
 
-![Puzzle ITC Revealjs Theme](demo.png)
+![Puzzle ITC Revealjs Theme](demo1.png)
 
 Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 
@@ -9,12 +9,16 @@ Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
 
-    ```reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css```
+    ```reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/master/theme/puzzle.css```
 
 Optional: Add an alias in your `.bashrc`:
 ```
 alias reveal-md='reveal-md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/master/theme/puzzle.css'
 ```
+
+#### Specify version
+If you want to use version 1.x of the theme you can specify the version in the url:
+    ```reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css```
 
 ### Local (per project)
 1. Install reveal-md: `npm install --save reveal-md`
@@ -24,7 +28,7 @@ alias reveal-md='reveal-md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-
     ...
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "reveal-md": "reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css"
+        "reveal-md": "reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/2.0.0/theme/puzzle.css"
     },
     ...
     ```
@@ -36,22 +40,23 @@ The releases use Semantic Versioning. More information: http://semver.org/
 
 ## Styles
 There are multiple styles that you can use:
-* master01: dark blue
-* master02: blue
-* master03: light blue
-* master04: turquoise
-* master05: green
+* master01: dark blue / intro slide
+* master02: white
+* master03: dark blue / content slide
+* master04: light blue
 
 Just add this tag under your slides:
 ```
 <!-- .slide: class="master01" -->
 ```
 
+The styles are based off the official Puzzle LibreOffice Impress templates.
+
 ### Intro Slides
-The intro class will add a numbered circle above the header.
+The `data-intro` attribute will add a specified text above the slide
 ```
 ## Second Topic
-<!-- .slide: class="master04 intro" -->
+<!-- .slide: class="master04" data-intro="Thema 1" -->
 ```
 ![Puzzle ITC Revealjs Theme](demo2.png)
 

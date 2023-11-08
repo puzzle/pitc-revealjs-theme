@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm-run-all --parallel build reveal-md",
     "build": "node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
-    "reveal-md": "reveal-md demo.md --watch --theme puzzle"
+    "reveal-md": "reveal-md demo.md --watch --theme theme/puzzle.css"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/puzzle/pitc-revealjs-theme#readme",
   "devDependencies": {
-    "node-sass": "^3.13.1",
-    "npm-run-all": "^2.3.0",
-    "reveal-md": "^0.4.3"
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "reveal-md": "^5.5.2"
   }
 }
