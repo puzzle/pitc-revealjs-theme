@@ -4,6 +4,9 @@
 
 Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 
+## Requirements
+NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nodesource/distributions#installation-instructions).
+
 ## Usage
 ### Global Installation
 1. Install reveal-md: `sudo npm install -g reveal-md`
@@ -149,6 +152,9 @@ Just add this tag under the slide seperator:
 ```
 
 ### master-people
+
+Notice that line breaks must either be created with `<br>` or an empty line.
+
 ![](imgs/master-people.png)
 ```md
 <!-- .slide: class="master-people" -->
@@ -171,8 +177,6 @@ Just add this tag under the slide seperator:
 
 ```
 
-Notice that line breaks must either be created with `<br>` or an empty line.
-
 ### master-title
 ![](imgs/master-title.png)
 ```md
@@ -186,7 +190,7 @@ Notice that line breaks must either be created with `<br>` or an empty line.
 ```
 
 ### master-top-head
-
+![](imgs/master-top-head.png)
 ```md
 <!-- .slide: class="master-top-head" data-background-image="https://www.puzzle.ch/wp-content/uploads/2023/08/pic_puzzle_team_2023_startseite_2000px.jpg" -->
 
@@ -194,6 +198,9 @@ Notice that line breaks must either be created with `<br>` or an empty line.
 ```
 
 ### master-icons
+
+Notice the nested lists `-`!
+
 ![](imgs/master-icons.png)
 ```md
 <!-- .slide: class="master-icons" -->
@@ -220,7 +227,6 @@ Notice that line breaks must either be created with `<br>` or an empty line.
     Gleichberechtigung,
     Nachwuchsförderung
 ```
-Notice the nested lists `-`!
 
 ### master-cards
 ![](imgs/master-cards.png)
