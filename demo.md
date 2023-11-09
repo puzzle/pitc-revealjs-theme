@@ -19,7 +19,7 @@ revealOptions:
 - Vorstellungsrunde
 - Wer ist Puzzle und was tut Puzzle?
 - Referenzen/Kundenprojekte (Success Stories)
-- Mögliche Dienstleistungen fürs KSGR
+- Mögliche Dienstleistungen
 - Fragerunde
 
 ---
@@ -61,14 +61,13 @@ revealOptions:
 ![demo_principles](/_assets/imgs/demo_principles.png)
 
 ---
-
 <!-- .slide: class="master-icons" -->
 
 # Facts & Figures
 
 - ![](/_assets/imgs/icon.png)
   - # 23 Jahre
-  Gründung GmbH am 9.9.1999
+    Gründung GmbH am 9.9.1999
 
 - ![](/_assets/imgs/icon.png)
   - # 100%
