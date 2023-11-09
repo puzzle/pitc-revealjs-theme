@@ -1,0 +1,593 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,400,300,500");
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+:root {
+  --r-background-color: #fff;
+  --r-main-font: Roboto, sans-serif;
+  --r-main-font-size: 40px;
+  --r-main-color: #000;
+  --r-block-margin: 20px;
+  --r-heading-margin: 0 0 20px 0;
+  --r-heading-font: Roboto, serif;
+  --r-heading-color: #1e5a96;
+  --r-heading-line-height: 1.2;
+  --r-heading-letter-spacing: normal;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: normal;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 2.2em;
+  --r-heading2-size: 1.8em;
+  --r-heading3-size: 1.3em;
+  --r-heading4-size: 1em;
+  --r-code-font: monospace;
+  --r-link-color: #333;
+  --r-link-color-dark: #0d0d0d;
+  --r-link-color-hover: #111;
+  --r-selection-background-color: #69B978;
+  --r-selection-color: #fff; }
+
+.reveal-viewport {
+  background: #fff;
+  background-color: var(--r-background-color); }
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color); }
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none; }
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none; }
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-weight: var(--r-heading-font-weight);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  word-wrap: break-word; }
+
+.reveal h1 {
+  font-size: var(--r-heading1-size); }
+
+.reveal h2 {
+  font-size: var(--r-heading2-size); }
+
+.reveal h3 {
+  font-size: var(--r-heading3-size); }
+
+.reveal h4 {
+  font-size: var(--r-heading4-size); }
+
+.reveal h1 {
+  text-shadow: var(--r-heading1-text-shadow); }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.3; }
+
+/* Remove trailing margins after titles */
+.reveal h1:last-child,
+.reveal h2:last-child,
+.reveal h3:last-child,
+.reveal h4:last-child,
+.reveal h5:last-child,
+.reveal h6:last-child {
+  margin-bottom: 0; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong,
+.reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: var(--r-block-margin) auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--r-code-font);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
+
+.reveal code {
+  font-family: var(--r-code-font);
+  text-transform: none;
+  tab-size: 2; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+.reveal .code-wrapper {
+  white-space: normal; }
+
+.reveal .code-wrapper code {
+  white-space: pre; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+.reveal img {
+  margin: var(--r-block-margin) 0; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+  transition: color .15s ease; }
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: var(--r-link-color-dark); }
+
+/*********************************************
+ * Frame helper
+ *********************************************/
+.reveal .r-frame {
+  border: 4px solid var(--r-main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal a .r-frame {
+  transition: all .15s linear; }
+
+.reveal a:hover .r-frame {
+  border-color: var(--r-link-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+  color: var(--r-link-color); }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--r-link-color); }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: var(--r-background-color); } }
+
+/*********************************************
+ * CUSTOM OVERRIDES
+ *********************************************/
+.reveal a {
+  text-decoration: underline; }
+
+.reveal em {
+  color: #61b44b;
+  font-style: normal !important; }
+
+.reveal .text-left {
+  text-align: left; }
+
+.reveal.has-dark-background {
+  color: #fff; }
+  .reveal.has-dark-background h1, .reveal.has-dark-background h2, .reveal.has-dark-background h3, .reveal.has-dark-background h4, .reveal.has-dark-background h5, .reveal.has-dark-background h6 {
+    color: #fff; }
+
+/*********************************************
+ * SLIDE MASTER
+ *********************************************/
+.slides section {
+  max-width: 1200px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: left; }
+
+.reveal .slide-background.master-cover {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzEyIiBoZWlnaHQ9IjE0NyIgdmlld0JveD0iMCAwIDMxMiAxNDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTMxMS44IDE0N0gxMDQuMzZMMjA4LjA4IDQzLjI4IDMxMS43OCAxNDciIGZpbGw9IiM0N0I4QjIiLz48cGF0aCBkPSJNMjM4LjQ2IDczLjY2TDMxMS44LjMyVjE0N2wtNzMuMzQtNzMuMzQiIGZpbGw9IiMzRDlFQ0MiLz48cGF0aCBkPSJNMTA0LjM2IDE0N2w1MS44Ni01MS44Nkg1Mi41TC42NCAxNDdoMTAzLjcyIiBmaWxsPSIjMzY5MDk2Ii8+PC9nPjwvc3ZnPgo=") bottom right;
+  background-color: #1B2D53;
+  background-repeat: no-repeat; }
+
+.master-cover img {
+  position: absolute;
+  bottom: 1em;
+  left: 1em; }
+
+.slides section.master-cover h1, .slides section.master-cover h2, .slides section.master-cover h3, .slides section.master-cover h4 {
+  text-align: left;
+  color: #fff; }
+
+.slides section.master-cover a {
+  color: #fff;
+  text-decoration: none; }
+
+.slides section.master-cover em {
+  color: #3FA8E0; }
+
+.reveal .slide-background.master-agenda {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDE3OCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE3Ny44NC0uMjJWMjA3LjRMNzMuOSAxMDMuNiAxNzcuODMtLjIzIiBmaWxsPSIjMjM4QkNBIi8+PHBhdGggZD0iTTEwNC4zMyA3My4xOUwzMC44My0uMjNoMTQ3bC03My41IDczLjQiIGZpbGw9IiMzRkE4RTAiLz48cGF0aCBkPSJNNTIuMzYgMTI1LjFMLjM4IDczLjJsNTEuOTgtNTEuOTIgNTEuOTcgNTEuOS01MS45NyA1MS45IiBmaWxsPSIjNDZCQ0MwIi8+PC9nPjwvc3ZnPgo=") top right;
+  background-repeat: no-repeat; }
+
+.slides section.master-agenda {
+  text-align: left; }
+  .slides section.master-agenda h1, .slides section.master-agenda h2, .slides section.master-agenda h3, .slides section.master-agenda h4 {
+    margin: 0; }
+  .slides section.master-agenda h1 {
+    margin-bottom: 2rem; }
+  .slides section.master-agenda h2 {
+    font-size: 2rem;
+    line-height: 1em; }
+
+.reveal .slide-background.master-title {
+  background-color: #3fa8e0; }
+
+.slides section.master-title {
+  top: 0 !important;
+  bottom: 0 !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center; }
+  .slides section.master-title h1, .slides section.master-title h2, .slides section.master-title h3, .slides section.master-title h4 {
+    margin: 0;
+    text-align: center;
+    color: #fff; }
+  .slides section.master-title em {
+    color: #1B2D53; }
+  .slides section.master-title h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.3em; }
+
+.slides section.master-title-box h1, .slides section.master-title-box h2, .slides section.master-title-box h3, .slides section.master-title-box h4, .slides section.master-title-box p {
+  margin: 0;
+  text-align: center; }
+
+.slides section.master-title-box {
+  background: #fff;
+  padding: 1rem;
+  bottom: 0;
+  top: auto !important; }
+
+.slides section.master-top-head h1, .slides section.master-top-head h2, .slides section.master-top-head h3, .slides section.master-top-head h4, .slides section.master-top-head p {
+  margin: 0;
+  text-align: center;
+  color: #000; }
+
+.slides section.master-top-head {
+  top: 0 !important; }
+  .slides section.master-top-head h1, .slides section.master-top-head h2, .slides section.master-top-head h3, .slides section.master-top-head h4 {
+    box-shadow: 100vw -100vw 0 100vw #1e5a96, -100vw -100vw 0 100vw #1e5a96;
+    background: #1E5A96;
+    color: #fff; }
+
+.reveal.overview .master-top-head {
+  box-shadow: none; }
+
+.reveal .slide-background.master-thanks {
+  background-color: #1E5A96;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.slides section.master-thanks {
+  max-width: 80%;
+  top: 0 !important;
+  right: 0;
+  text-align: right; }
+  .slides section.master-thanks h1, .slides section.master-thanks h2, .slides section.master-thanks h3, .slides section.master-thanks h4 {
+    color: #fff;
+    margin: 0;
+    text-align: right;
+    line-height: 1em;
+    margin-bottom: 0.25em; }
+  .slides section.master-thanks h1 {
+    line-height: 1em;
+    margin: 0.75em 0 0.5em 0; }
+  .slides section.master-thanks h3 {
+    font-weight: 300; }
+  .slides section.master-thanks a {
+    color: white; }
+
+.slides section.master-icons > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0; }
+  .slides section.master-icons > ul > li {
+    font-size: 1.3rem;
+    list-style: none;
+    display: flex;
+    align-items: center; }
+    .slides section.master-icons > ul > li img {
+      max-width: unset;
+      margin-right: 30px; }
+  .slides section.master-icons > ul h1, .slides section.master-icons > ul p, .slides section.master-icons > ul ul {
+    margin: 0; }
+  .slides section.master-icons > ul li {
+    list-style: none; }
+
+.narrow {
+  max-width: 1000px;
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.slides section.master-people ul {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  text-align: center;
+  margin: 0; }
+  .slides section.master-people ul > li {
+    grid-row: 1;
+    padding: 1.75rem 1rem;
+    box-sizing: border-box;
+    list-style: none; }
+  .slides section.master-people ul h2 {
+    margin: 0; }
+  .slides section.master-people ul h3 {
+    color: black;
+    font-size: 2rem;
+    white-space: nowrap;
+    margin: 0; }
+  .slides section.master-people ul p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0; }
+  .slides section.master-people ul a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    background: none; }
+  .slides section.master-people ul img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto 0rem auto; }
+  .slides section.master-people ul a {
+    border: none;
+    color: #1e5a96; }
+
+.slides section.master-cards ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  font-size: 1.5rem; }
+
+.slides section.master-cards li {
+  background: #002F47;
+  color: white;
+  margin: 10px;
+  list-style: none;
+  padding: 20px; }
+
+.slides section.master-cards li h1 {
+  font-size: 1.5em;
+  color: white; }
+
+code {
+  font-size: 0.85rem;
+  line-height: 1.1em; }
+
+.big code {
+  font-size: 1rem;
+  line-height: 1.1em; }
+
+.very-big code {
+  font-size: 1.3rem;
+  line-height: 1.1em; }
+
+.reveal {
+  counter-reset: heading-counter 0; }
+  .reveal div.nr {
+    counter-increment: heading-counter 1; }
+    .reveal div.nr:before {
+      content: counter(heading-counter); }
+
+div.nr {
+  background-color: #3fa8e0;
+  color: #fff;
+  margin: 2rem auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.master-title div.nr {
+  background-color: #fff;
+  color: #3fa8e0; }
+
+.reveal .slide-background.master01 {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzEyIiBoZWlnaHQ9IjE0NyIgdmlld0JveD0iMCAwIDMxMiAxNDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTMxMS44IDE0N0gxMDQuMzZMMjA4LjA4IDQzLjI4IDMxMS43OCAxNDciIGZpbGw9IiM0N0I4QjIiLz48cGF0aCBkPSJNMjM4LjQ2IDczLjY2TDMxMS44LjMyVjE0N2wtNzMuMzQtNzMuMzQiIGZpbGw9IiMzRDlFQ0MiLz48cGF0aCBkPSJNMTA0LjM2IDE0N2w1MS44Ni01MS44Nkg1Mi41TC42NCAxNDdoMTAzLjcyIiBmaWxsPSIjMzY5MDk2Ii8+PC9nPjwvc3ZnPgo=") bottom right, url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU2IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDE1NiAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTS4xIDIwNy4xNVYtLjI4bDEwMy43IDEwMy43MkwuMSAyMDcuMTQiIGZpbGw9IiMyRDgxQjYiLz48cGF0aCBkPSJNLjEtLjI4aDEwMy43TDUxLjk2IDUxLjU4LjEtLjI4IiBmaWxsPSIjNDdCOEIyIi8+PHBhdGggZD0iTTE1NS42NyA1MS41OGwtNTEuODYgNTEuODYtNTEuODUtNTEuODZMMTAzLjgtLjI4bDUxLjg3IDUxLjg2IiBmaWxsPSIjM0Q5RUNDIi8+PC9nPjwvc3ZnPgo=") top left;
+  background-color: #1E5A96;
+  background-repeat: no-repeat; }
+
+.master01 div.nr {
+  background-color: #fff;
+  color: #1E5A96; }
+
+.reveal .slide-background.master02 {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDE3OCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE3Ny44NC0uMjJWMjA3LjRMNzMuOSAxMDMuNiAxNzcuODMtLjIzIiBmaWxsPSIjMUU1QTk2Ii8+PHBhdGggZD0iTTEwNC4zMyA3My4xOUwzMC44My0uMjNoMTQ3bC03My41IDczLjQiIGZpbGw9IiMyMzhCQ0EiLz48cGF0aCBkPSJNNTIuMzYgMTI1LjFMLjM4IDczLjJsNTEuOTgtNTEuOTIgNTEuOTcgNTEuOS01MS45NyA1MS45IiBmaWxsPSIjM0ZBOEUwIi8+PC9nPjwvc3ZnPgo=") top right, url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDIwOCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTS4wNy0uMjJIMjA3LjVsLTEwMy43IDEwMy44TC4wNi0uMiIgZmlsbD0iIzIzOEJDQSIvPjxwYXRoIGQ9Ik0uMDggMTAzLjZWLS4yM2w1MS44NSA1MS45LTUxLjg1IDUxLjkiIGZpbGw9IiMxRTVBOTYiLz48cGF0aCBkPSJNNTEuOTMgMTU1LjVMLjA4IDIwNy40VjEwMy42bDUxLjg1LTUxLjkyVjE1NS41IiBmaWxsPSIjM0ZBOEUwIi8+PC9nPjwvc3ZnPgo=") top left;
+  background-color: #3B7BBE;
+  background-repeat: no-repeat; }
+
+.master02 div.nr {
+  background-color: #fff;
+  color: #3B7BBE; }
+
+.reveal .slide-background.master03 {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDE3OCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE3Ny44NC0uMjJWMjA3LjRMNzMuOSAxMDMuNiAxNzcuODMtLjIzIiBmaWxsPSIjM0ZBOEUwIi8+PHBhdGggZD0iTTEwNC4zMyA3My4xOUwzMC44My0uMjNoMTQ3bC03My41IDczLjQiIGZpbGw9IiMzQjdCQkUiLz48cGF0aCBkPSJNNTIuMzYgMTI1LjFMLjM4IDczLjJsNTEuOTgtNTEuOTIgNTEuOTcgNTEuOS01MS45NyA1MS45IiBmaWxsPSIjNDZCQ0MwIi8+PC9nPjwvc3ZnPgo=") top right, url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDIwOCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTS4wNy0uMjJIMjA3LjVsLTEwMy43IDEwMy44TC4wNi0uMiIgZmlsbD0iIzNGQThFMCIvPjxwYXRoIGQ9Ik0uMDggMTAzLjZWLS4yM2w1MS44NSA1MS45LTUxLjg1IDUxLjkiIGZpbGw9IiM0NkJDQzAiLz48cGF0aCBkPSJNNTEuOTMgMTU1LjVMLjA4IDIwNy40VjEwMy42bDUxLjg1LTUxLjkyVjE1NS41IiBmaWxsPSIjM0I3QkJFIi8+PC9nPjwvc3ZnPgo=") top left;
+  background-color: #238BCA;
+  background-repeat: no-repeat; }
+
+.master03 div.nr {
+  background-color: #fff;
+  color: #238BCA; }
+
+.reveal .slide-background.master04 {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDE3OCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE3Ny44NC0uMjJWMjA3LjRMNzMuOSAxMDMuNiAxNzcuODMtLjIzIiBmaWxsPSIjMjM4QkNBIi8+PHBhdGggZD0iTTEwNC4zMyA3My4xOUwzMC44My0uMjNoMTQ3bC03My41IDczLjQiIGZpbGw9IiMzRkE4RTAiLz48cGF0aCBkPSJNNTIuMzYgMTI1LjFMLjM4IDczLjJsNTEuOTgtNTEuOTIgNTEuOTcgNTEuOS01MS45NyA1MS45IiBmaWxsPSIjNDZCQ0MwIi8+PC9nPjwvc3ZnPgo=") top right, url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDIwOCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTS4wNy0uMjJIMjA3LjVsLTEwMy43IDEwMy44TC4wNi0uMiIgZmlsbD0iIzQ2QkNDMCIvPjxwYXRoIGQ9Ik0uMDggMTAzLjZWLS4yM2w1MS44NSA1MS45LTUxLjg1IDUxLjkiIGZpbGw9IiMyMzhCQ0EiLz48cGF0aCBkPSJNNTEuOTMgMTU1LjVMLjA4IDIwNy40VjEwMy42bDUxLjg1LTUxLjkyVjE1NS41IiBmaWxsPSIjM0ZBOEUwIi8+PC9nPjwvc3ZnPgo=") top left;
+  background-color: #2C97A6;
+  background-repeat: no-repeat; }
+
+.master04 div.nr {
+  background-color: #fff;
+  color: #2C97A6; }
+
+.reveal .slide-background.master05 {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDE3OCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE3Ny44NC0uMjJWMjA3LjRMNzMuOSAxMDMuNiAxNzcuODMtLjIzIiBmaWxsPSIjMkM5N0E2Ii8+PHBhdGggZD0iTTEwNC4zMyA3My4xOUwzMC44My0uMjNoMTQ3bC03My41IDczLjQiIGZpbGw9IiM2MUI0NEIiLz48cGF0aCBkPSJNNTIuMzYgMTI1LjFMLjM4IDczLjJsNTEuOTgtNTEuOTIgNTEuOTcgNTEuOS01MS45NyA1MS45IiBmaWxsPSIjNDZCQ0MwIi8+PC9nPjwvc3ZnPgo=") top right, url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjA4IiBoZWlnaHQ9IjIwOCIgdmlld0JveD0iMCAwIDIwOCAyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTS4wNy0uMjJIMjA3LjVsLTEwMy43IDEwMy44TC4wNi0uMiIgZmlsbD0iIzQ2QkNDMCIvPjxwYXRoIGQ9Ik0uMDggMTAzLjZWLS4yM2w1MS44NSA1MS45LTUxLjg1IDUxLjkiIGZpbGw9IiMyQzk3QTYiLz48cGF0aCBkPSJNNTEuOTMgMTU1LjVMLjA4IDIwNy40VjEwMy42bDUxLjg1LTUxLjkyVjE1NS41IiBmaWxsPSIjNjFCNDRCIi8+PC9nPjwvc3ZnPgo=") top left;
+  background-color: #69B978;
+  background-repeat: no-repeat; }
+
+.master05 div.nr {
+  background-color: #fff;
+  color: #69B978; }
