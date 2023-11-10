@@ -108,7 +108,7 @@ Weitere Beispiele folgen.
   Marketing & Sales
   jane@email.com
 ```
-Falls du ein Bild aus deinem Repository benutzen willst, dann hänge `/_assets/` vor den Pfad.
+Falls du ein Bild aus deinem Repository benutzen willst, dann hänge `_assets/` vor den Pfad.
 ---
 <!-- .slide: class="l-title" -->
 
@@ -146,13 +146,13 @@ Falls du ein Bild aus deinem Repository benutzen willst, dann hänge `/_assets/`
 ---
 # Unsere Principles
 
-![demo_principles](/_assets/imgs/demo_principles.png)
+![demo_principles](_assets/imgs/demo_principles.png)
 
 ----
 ```md
 # Unsere Principles
 
-![demo_principles](/_assets/imgs/demo_principles.png)
+![demo_principles](_assets/imgs/demo_principles.png)
 ```
 ---
 <!-- .slide: class="l-top-head" data-background-image="https://www.puzzle.ch/wp-content/uploads/2023/08/pic_puzzle_team_2023_startseite_2000px.jpg" -->
@@ -169,21 +169,21 @@ Falls du ein Bild aus deinem Repository benutzen willst, dann hänge `/_assets/`
 
 # Facts & Figures
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # 23 Jahre
     Gründung GmbH am 9.9.1999
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # 100%
     Inhabergeführt,
     eigenfinanziert
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # 100%
     Swiss Made
     Software
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # beyond
     Nachhaltigkeit,
     Gleichberechtigung,
@@ -194,21 +194,21 @@ Falls du ein Bild aus deinem Repository benutzen willst, dann hänge `/_assets/`
 
 # Facts & Figures
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # 23 Jahre
     Gründung GmbH am 9.9.1999
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # 100%
     Inhabergeführt,
     eigenfinanziert
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # 100%
     Swiss Made
     Software
 
-- ![](/_assets/imgs/icon.png)
+- ![](_assets/imgs/icon.png)
   - # beyond
     Nachhaltigkeit,
     Gleichberechtigung,

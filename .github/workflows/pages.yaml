@@ -47,6 +47,8 @@ jobs:
           rm -rf build/demo/
           # We cannot put it in the root, because old files are not removed
           cp -r _static build/demo
+          # Because the static build includes a _assets directory
+          touch build/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
