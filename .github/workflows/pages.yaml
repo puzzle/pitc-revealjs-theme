@@ -41,6 +41,12 @@ jobs:
           mkdir -p build/latest
           cp theme/puzzle.css build/latest
           ls -R build
+      - name: Copy demo presentation
+        run: |
+          # Clean old state
+          rm -rf build/demo/
+          # We cannot put it in the root, because old files are not removed
+          cp -r _static build/demo
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

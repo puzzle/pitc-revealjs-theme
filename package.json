@@ -5,8 +5,9 @@
   "scripts": {
     "start": "npm-run-all --parallel watch reveal-md",
     "watch": "node-sass --watch theme/source/puzzle.scss theme/puzzle.css",
-    "build": "node-sass theme/source/puzzle.scss theme/puzzle.css",
-    "reveal-md": "reveal-md demo.md --watch --theme theme/puzzle.css"
+    "build": "node-sass theme/source/puzzle.scss theme/puzzle.css && npm run static",
+    "reveal-md": "reveal-md demo.md --watch --theme theme/puzzle.css",
+    "static": "reveal-md demo.md --static --theme theme/puzzle.css && cp -r imgs _static/_assets"
   },
   "repository": {
     "type": "git",
