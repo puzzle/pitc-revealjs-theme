@@ -277,34 +277,24 @@ $overlayElementFgColor: 0, 0, 0;
 
 // THANKS
 .reveal .slide-background.l-thanks {
-  //background: url(/_assets/theme/source/puzzle-imgs/03_thanks_bottom_left.svg) bottom left,
-  //            linear-gradient(to right, #003870, #1d5995);
-  background-color: #1E5A96;
+  background: url('data:image/svg+xml;utf8,#{$tangram03}') top right;
+  background-size: auto 400px;
+  background-color: #1B2D53;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 .slides section.l-thanks {
-  max-width: 80%;
-  top: 0 !important;
-  right: 0;
-  text-align: right;
-
   h1, h2, h3, h4 {
     color: #fff;
-    margin: 0;
-    text-align: right;
-    line-height: 1em;
-    margin-bottom: 0.25em;
-  }
-  h1 {
-    line-height: 1em;
-    margin: 0.75em 0 0.5em 0;
-  }
-  h3 {
-    font-weight: 300;
   }
   a {
     color: #fff;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    list-style: none;
+    margin: 0;
   }
 }
 

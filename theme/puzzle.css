@@ -445,28 +445,23 @@
   box-shadow: none; }
 
 .reveal .slide-background.l-thanks {
-  background-color: #1E5A96;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: url('data:image/svg+xml;utf8,<svg width="108.19179" height="112.82448" viewBox="0 0 108.19179 112.82448" fill="none" version="1.1" id="svg31" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><g id="g24" transform="translate(-5.8000002)"><g id="g12680" transform="matrix(0.95617717,0,0,0.94235801,4.9875946,0)"><g id="g24714"><path fill-rule="evenodd" clip-rule="evenodd" d="M 114,0 V 80.0113 L 73.9944,40.0056 Z" fill="%232A96A6" id="path18" style="fill:%234a77bb;fill-opacity:1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M 57.4248,56.5752 0.849639,0 H 114 Z" fill="%233A7CBE" id="path20" style="fill:%232f5793;fill-opacity:1"/><path style="fill:%2359a4dd;fill-opacity:1;stroke-width:.137143" d="M 54.068393,99.874109 34.217142,80.022503 54.102857,60.137143 73.988571,40.251783 93.874286,60.137143 113.76,80.022503 93.90875,99.874109 C 82.990561,110.79249 74.02648,119.72571 73.988571,119.72571 c -0.03791,0 -9.00199,-8.93322 -19.920178,-19.851601 z" id="path1057"/></g></g></g></svg>') top right;
+  background-size: auto 400px;
+  background-color: #1B2D53;
+  background-repeat: no-repeat; }
 
-.slides section.l-thanks {
-  max-width: 80%;
-  top: 0 !important;
-  right: 0;
-  text-align: right; }
-  .slides section.l-thanks h1, .slides section.l-thanks h2, .slides section.l-thanks h3, .slides section.l-thanks h4 {
-    color: #fff;
-    margin: 0;
-    text-align: right;
-    line-height: 1em;
-    margin-bottom: 0.25em; }
-  .slides section.l-thanks h1 {
-    line-height: 1em;
-    margin: 0.75em 0 0.5em 0; }
-  .slides section.l-thanks h3 {
-    font-weight: 300; }
-  .slides section.l-thanks a {
-    color: #fff; }
+.slides section.l-thanks h1, .slides section.l-thanks h2, .slides section.l-thanks h3, .slides section.l-thanks h4 {
+  color: #fff; }
+
+.slides section.l-thanks a {
+  color: #fff; }
+
+.slides section.l-thanks ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  list-style: none;
+  margin: 0; }
 
 .slides section.l-icons > ul {
   display: grid;

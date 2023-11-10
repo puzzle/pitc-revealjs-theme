@@ -283,6 +283,14 @@ Der Aufbau mit den `-` Zeichen ist wichtig!
 ---
 <!-- .slide: class="l-thanks" -->
 
-# Merci!
-### Mehr Informationen zu Puzzle:
-### www.puzzle.ch
+# Merci
+Mehr Informationen zu Puzzle:
+www.puzzle.ch
+
+<br><br><br>
+
+- @puzzleitc
+- @puzzleitc
+- @puzzle_itc
+- @puzzleitc
+- @puzzle

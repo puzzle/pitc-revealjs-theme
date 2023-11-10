@@ -49,6 +49,22 @@ jobs:
           cp -r _static build/demo
           # Because the static build includes a _assets directory
           touch build/.nojekyll
+          cat <<EOF > build/index.html
+            <!DOCTYPE HTML>
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="refresh" content="0; url=./demo">
+                    <script type="text/javascript">
+                        window.location.href = "demo"
+                    </script>
+                    <title>Page Redirection</title>
+                </head>
+                <body>
+                    If you are not redirected automatically, follow this <a href='demo'>link to example</a>.
+                </body>
+            </html>
+          EOF
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
