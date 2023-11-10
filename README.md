@@ -43,7 +43,7 @@ The following versions are available:
 
 The major version is automatically updated, when there are compatible new features. The minor version is only updated when there are new patches.
 
-See the [gh-pages](https://github.com/puzzle/pitc-revealjs-theme/tree/gh-pages) branch for possible versions.
+See the [Github Tags](https://github.com/puzzle/pitc-revealjs-theme/tags) for available releases.
 
 You can then use the version within the URL:
 ```
