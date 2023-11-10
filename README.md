@@ -1,6 +1,6 @@
 # Puzzle ITC Revealjs Theme
 
-![Puzzle ITC Revealjs Theme](imgs/demo-cover.png)
+[![Puzzle ITC Revealjs Theme](imgs/demo-cover.png)](https://puzzle.github.io/pitc-revealjs-theme/demo)
 
 Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 
