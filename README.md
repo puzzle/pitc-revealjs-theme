@@ -12,34 +12,26 @@ NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nod
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
 
-    ```reveal-md demo.md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/latest/puzzle.css```
+    ```reveal-md demo.md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css```
 
 Optional: Add an alias in your `.bashrc`:
 ```
-alias reveal-md='reveal-md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/latest/puzzle.css'
+alias reveal-md='reveal-md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css'
 ```
 
 ### Local (per project)
-1. Install reveal-md: `npm install --save reveal-md`
-2. Add script in your `packages.json`:
-
-    ```
-    ...
-    "scripts": {
-        "reveal-md": "reveal-md slides.md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/latest/puzzle.css"
-    },
-    ...
-    ```
-3. Open the presentation: `npm run reveal-md`
+1. Copy the files in `example` to your repository.
+2. Install the dependencies with `npm install`
+3. Open the presentation with `npm run start`
 
 ### Versions
 
 The following versions are available:
 - `latest`
 - Git sha (e.g. `07ff323`)
-- Major version (e.g. `1`)
-- Minor version (e.g. `1.0`)
-- Patch version (e.g. `1.0.0`)
+- Major version (e.g. `2`)
+- Minor version (e.g. `2.0`)
+- Patch version (e.g. `2.0.0`)
 
 The major version is automatically updated, when there are compatible new features. The minor version is only updated when there are new patches.
 
@@ -49,6 +41,8 @@ You can then use the version within the URL:
 ```
 https://puzzle.github.io/pitc-revealjs-theme/${VERSION}/puzzle.css"
 ```
+
+Use the version `1.0.2` for the old theme.
 
 The releases use Semantic Versioning. More information: http://semver.org/
 

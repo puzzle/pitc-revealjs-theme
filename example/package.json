@@ -1,0 +1,14 @@
+{
+  "name": "pitc-revealjs-theme",
+  "version": "1.0.0",
+  "description": "Revealjs presentation based upon the Puzzle theme",
+  "scripts": {
+    "reveal-md": "reveal-md slides.md --theme https://puzzle.github.io/pitc-revealjs-theme/latest/puzzle.css",
+    "start": "npm run reveal-md -- --watch",
+    "static": "npm run reveal-md -- --static",
+    "print": "npm run reveal-md -- --print"
+  },
+  "devDependencies": {
+    "reveal-md": "^5.5.2"
+  }
+}
