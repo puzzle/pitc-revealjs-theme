@@ -8,6 +8,18 @@ Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nodesource/distributions#installation-instructions).
 
 ## Usage
+
+### Local (per project)
+1. Copy the files in `example` to your repository.
+2. Install the dependencies with `npm install`
+3. Open the presentation with `npm run start`
+
+### Docker
+
+```
+docker run --rm -p 1948:1948 -v $(pwd):/slides webpronl/reveal-md:latest /slides --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css
+```
+
 ### Global Installation
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
@@ -18,11 +30,6 @@ Optional: Add an alias in your `.bashrc`:
 ```
 alias reveal-md='reveal-md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css'
 ```
-
-### Local (per project)
-1. Copy the files in `example` to your repository.
-2. Install the dependencies with `npm install`
-3. Open the presentation with `npm run start`
 
 ### Versions
 
