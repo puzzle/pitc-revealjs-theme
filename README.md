@@ -1,59 +1,106 @@
 # Puzzle ITC Revealjs Theme
 
-![Puzzle ITC Revealjs Theme](demo.png)
+[![Puzzle ITC Revealjs Theme](imgs/demo-cover.png)](https://puzzle.github.io/pitc-revealjs-theme/demo)
 
 Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 
-## Usage with reveal-md
-### Global
+## Requirements
+NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nodesource/distributions#installation-instructions).
+
+## Usage
+### Global Installation
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
 
-    ```reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css```
+    ```reveal-md demo.md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css```
 
 Optional: Add an alias in your `.bashrc`:
 ```
-alias reveal-md='reveal-md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/master/theme/puzzle.css'
+alias reveal-md='reveal-md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css'
 ```
 
 ### Local (per project)
-1. Install reveal-md: `npm install --save reveal-md`
-2. Add script in your `packages.json`:
+1. Copy the files in `example` to your repository.
+2. Install the dependencies with `npm install`
+3. Open the presentation with `npm run start`
 
-    ```
-    ...
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "reveal-md": "reveal-md demo.md --watch --theme https://ghcdn.rawgit.org/puzzle/pitc-revealjs-theme/1.0.2/theme/puzzle.css"
-    },
-    ...
-    ```
-3. Open the presentation: `npm run reveal-md`
+### Versions
 
-You may also use `--theme puzzle` if you copy the theme directory into your project. More information (PDF and static site generation): https://github.com/webpro/reveal-md
+The following versions are available:
+- `latest`
+- Git sha (e.g. `07ff323`)
+- Major version (e.g. `2`)
+- Minor version (e.g. `2.0`)
+- Patch version (e.g. `2.0.0`)
+
+The major version is automatically updated, when there are compatible new features. The minor version is only updated when there are new patches.
+
+See the [Github Tags](https://github.com/puzzle/pitc-revealjs-theme/tags) for available releases.
+
+You can then use the version within the URL:
+```
+https://puzzle.github.io/pitc-revealjs-theme/${VERSION}/puzzle.css"
+```
+
+Use the version `1.0.2` for the old theme.
 
 The releases use Semantic Versioning. More information: http://semver.org/
 
-## Styles
-There are multiple styles that you can use:
-* master01: dark blue
-* master02: blue
-* master03: light blue
-* master04: turquoise
-* master05: green
+## Layouts
+See https://puzzle.github.io/pitc-revealjs-theme/demo for a demo. Every slide has a vertical slide below, that describes its usage.
 
-Just add this tag under your slides:
+## Options
+
+There are multiple options to configure a single slide. In the official documentation these are HTML attributes on the section `<section data-XX>`. You may add these in the slide comment:
 ```
-<!-- .slide: class="master01" -->
+<!-- .slide: data-background-color="aquamarine" -->
 ```
 
-### Intro Slides
-The intro class will add a numbered circle above the header.
+- [Backgrounds](https://revealjs.com/backgrounds/)
+- [Math](https://revealjs.com/math/#markdown)
+- [Layout](https://revealjs.com/layout/)
+- [Slide Visibility](https://revealjs.com/slide-visibility/)
+- [Transitions](https://revealjs.com/transitions/)
+- [Advanced: Auto Animate](https://revealjs.com/auto-animate/)
+- [Speaker View](https://revealjs.com/speaker-view/)
+
+
+You may link to a specific slide:
 ```
-## Second Topic
-<!-- .slide: class="master04 intro" -->
+<!-- .slide: id="test" -->
+# Test
+
+---
+# Another slide
+[Link](#test)
 ```
-![Puzzle ITC Revealjs Theme](demo2.png)
+
+Some features like [Media](https://revealjs.com/media/) also require HTML instead of Markdown:
+
+```
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+```
+
+## Fragments
+[Fragments](https://revealjs.com/fragments/) can be used in Markdown with the following:
+```
+- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+```
+
+## Code Highlighting
+
+Specific parts of code can be highlighted:
+````
+```js [1-2|3|4]
+    let a = 1;
+    let b = 2;
+    let c = x => 1 + 2 + x;
+    c(3);
+```
+````
+See the [official documentation](https://revealjs.com/code/#line-numbers-%26-highlights) for more information.
+
 
 ## Contributing
 1. Run `npm install`
@@ -61,7 +108,21 @@ The intro class will add a numbered circle above the header.
 3. Edit `puzzle.scss` in `css/theme/source`
 4. Reload browser
 
-## Full Installation (use this if you don't want to use markdown)
+To release a new version:
+```
+git tag 1.2.3
+git push --tags
+```
+
+Always use the format `major.minor.patch` and follow Semantic Versioning. More information: http://semver.org/
+
+## Alternative Installations
+
+### Offline Theme
+
+To use the theme without internet connectivity you must copy the `theme/puzzle.css` into your project and use `--theme puzzle.css`. More information (PDF and static site generation): https://github.com/webpro/reveal-md
+
+### Full Installation (use this if you don't want to use markdown)
 1. Download the latest version of reveal.js from https://github.com/hakimel/reveal.js/releases
 2. Unzip and copy `puzzle.css` into `css/theme`
 3. Update the included theme in `index.html`
