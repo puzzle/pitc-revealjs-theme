@@ -4,12 +4,12 @@
 
 Revealjs Dokumentation: https://github.com/hakimel/reveal.js
 
+
 ## Requirements
 NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nodesource/distributions#installation-instructions).
 
-## Usage
 
-### Local (per project)
+## Usage with NPM (recommended)
 
 1. Copy the files in `example` to your repository.
 2. Install the dependencies with `npm install`
@@ -18,23 +18,24 @@ NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nod
 **Note:** If you have multiple presentations, replace `slides.md` in `package.json` with a dot (`.`).
 
 
-#### Print
+### Print
 
 1. Start your presentation with `npm run start`
 2. Open another terminal and run `npm run print`
 3. If everything worked, your slides will be in `slides.pdf`
 
-#### Static generation
+### Static generation
 
 For offline presentations and if you want to be very sure nothing changes, use `npm run static`. Make sure to test your presentation! Sometimes image paths are not correct or the images must be manually copied to `_static/_assets`.
 
-### Docker
+
+## Usage with Docker
 
 ```
 docker run --rm -p 1948:1948 -v $(pwd):/slides webpronl/reveal-md:latest --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css /slides
 ```
 
-#### Print
+### Print
 
 1. Start your presentation in another terminal
 2. Run the following command:
@@ -42,7 +43,7 @@ docker run --rm -p 1948:1948 -v $(pwd):/slides webpronl/reveal-md:latest --watch
 docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/slides.md slides.pdf
 ```
 
-### Global Installation
+## Global Installation
 1. Install reveal-md: `sudo npm install -g reveal-md`
 2. Open the presentation:
 
@@ -54,7 +55,7 @@ alias reveal-md='reveal-md --watch --theme https://puzzle.github.io/pitc-revealj
 ```
 
 
-### Versions
+## Versions
 
 The following versions are available:
 - `latest`
@@ -76,8 +77,10 @@ Use the version `1.0.2` for the old theme.
 
 The releases use Semantic Versioning. More information: http://semver.org/
 
+
 ## Layouts
 See https://puzzle.github.io/pitc-revealjs-theme/demo for a demo. Every slide has a vertical slide below, that describes its usage.
+
 
 ## Options
 
@@ -149,15 +152,3 @@ git push --tags
 ```
 
 Always use the format `major.minor.patch` and follow Semantic Versioning. More information: http://semver.org/
-
-## Alternative Installations
-
-### Offline Theme
-
-To use the theme without internet connectivity you must copy the `theme/puzzle.css` into your project and use `--theme puzzle.css`. More information (PDF and static site generation): https://github.com/webpro/reveal-md
-
-### Full Installation (use this if you don't want to use markdown)
-1. Download the latest version of reveal.js from https://github.com/hakimel/reveal.js/releases
-2. Unzip and copy `puzzle.css` into `css/theme`
-3. Update the included theme in `index.html`
-4. Open `index.html` in a browser to view it
