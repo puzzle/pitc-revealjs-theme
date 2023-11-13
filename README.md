@@ -24,6 +24,9 @@ NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nod
 2. Open another terminal and run `npm run print`
 3. If everything worked, your slides will be in `slides.pdf`
 
+#### Static generation
+
+For offline presentations and if you want to be very sure nothing changes, use `npm run static`. Make sure to test your presentation! Sometimes image paths are not correct or the images must be manually copied to `_static/_assets`.
 
 ### Docker
 
