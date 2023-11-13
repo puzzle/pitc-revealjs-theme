@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Revealjs presentation based upon the Puzzle theme",
   "scripts": {
-    "reveal-md": "reveal-md . --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css",
+    "reveal-md": "reveal-md slides.md --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css",
     "start": "npm run reveal-md -- --watch",
     "static": "npm run reveal-md -- --static",
-    "print": "decktape http://localhost:1948 slides.pdf"
+    "print": "decktape http://localhost:1948/slides.md slides.pdf"
   },
   "devDependencies": {
     "reveal-md": "^5.5.2",

@@ -10,14 +10,33 @@ NPM must be installed. Instructions for Ubuntu are [here](https://github.com/nod
 ## Usage
 
 ### Local (per project)
+
 1. Copy the files in `example` to your repository.
 2. Install the dependencies with `npm install`
 3. Open the presentation with `npm run start`
 
+**Note:** If you have multiple presentations, replace `slides.md` in `package.json` with a dot (`.`).
+
+
+#### Print
+
+1. Start your presentation with `npm run start`
+2. Open another terminal and run `npm run print`
+3. If everything worked, your slides will be in `slides.pdf`
+
+
 ### Docker
 
 ```
-docker run --rm -p 1948:1948 -v $(pwd):/slides webpronl/reveal-md:latest /slides --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css
+docker run --rm -p 1948:1948 -v $(pwd):/slides webpronl/reveal-md:latest --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css /slides
+```
+
+#### Print
+
+1. Start your presentation in another terminal
+2. Run the following command:
+```
+docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/slides.md slides.pdf
 ```
 
 ### Global Installation
@@ -30,6 +49,7 @@ Optional: Add an alias in your `.bashrc`:
 ```
 alias reveal-md='reveal-md --watch --theme https://puzzle.github.io/pitc-revealjs-theme/2/puzzle.css'
 ```
+
 
 ### Versions
 
@@ -107,6 +127,10 @@ Specific parts of code can be highlighted:
 ```
 ````
 See the [official documentation](https://revealjs.com/code/#line-numbers-%26-highlights) for more information.
+
+## Custom CSS
+
+To override CSS you may add `--css custom.css` to the `reveal-md` command. This is usally located in `package.json`.
 
 
 ## Contributing
