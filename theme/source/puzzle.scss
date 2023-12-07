@@ -106,6 +106,9 @@ $overlayElementFgColor: 0, 0, 0;
 /*********************************************
  * SLIDE LAYOUTS
  *********************************************/
+.slides {
+  width: 100vw !important;
+}
 
 // CONTENT (default)
 .slides section {
@@ -142,6 +145,13 @@ $overlayElementFgColor: 0, 0, 0;
   left: 1em;
 }
 .slides section.l-cover {
+  margin-top: 10%;
+  height: 90%;
+
+  h1 {
+    margin: 0;
+  }
+
   h1, h2, h3, h4 {
     text-align: left;
     color: #fff;
@@ -150,9 +160,11 @@ $overlayElementFgColor: 0, 0, 0;
     color: #fff;
     text-decoration: none;
   }
+
   h2 {
     font-size: $heading3Size;
-    margin-top: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 1.25em;
   }
   em {
     color: #3fa8e0;
@@ -193,7 +205,6 @@ $overlayElementFgColor: 0, 0, 0;
   justify-content: center;
   h1, h2, h3, h4 {
     margin: 0;
-    text-align: center;
     color: #fff;
   }
   em {
@@ -201,7 +212,7 @@ $overlayElementFgColor: 0, 0, 0;
   }
   h2 {
     position: absolute;
-    top: 0;
+    top: 0.5em;
     left: 0;
     right: 0;
     font-size: $heading3Size;
@@ -224,7 +235,6 @@ $overlayElementFgColor: 0, 0, 0;
   justify-content: center;
   h1, h2, h3, h4 {
     margin: 0;
-    text-align: center;
     color: #fff;
   }
   em {
@@ -232,7 +242,7 @@ $overlayElementFgColor: 0, 0, 0;
   }
   h2 {
     position: absolute;
-    top: 0;
+    top: 0.5em;
     left: 0;
     right: 0;
     font-size: $heading3Size;

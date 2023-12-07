@@ -8,7 +8,7 @@ revealOptions:
 
 # Präsentation
 # *Puzzle ITC*
-## RevealJS Theme <!-- .element: class="r-stretch" -->
+## RevealJS Theme
 
 John Doe
 john@mail.com
@@ -18,7 +18,8 @@ john@mail.com
 
 # Präsentation
 # *Puzzle ITC*
-### RevealJS Theme <!-- .element: class="r-stretch" -->
+## RevealJS Theme
+
 John Doe
 john@mail.com
 ```

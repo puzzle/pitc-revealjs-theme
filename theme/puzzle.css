@@ -29,8 +29,8 @@
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #333;
-  --r-link-color-dark: #0d0d0d;
+  --r-link-color: #15508b;
+  --r-link-color-dark: #0b2a49;
   --r-link-color-hover: #111;
   --r-selection-background-color: #69B978;
   --r-selection-color: #fff; }
@@ -315,6 +315,9 @@
 /*********************************************
  * SLIDE LAYOUTS
  *********************************************/
+.slides {
+  width: 100vw !important; }
+
 .slides section {
   max-width: 1200px;
   margin: auto;
@@ -342,20 +345,23 @@
   bottom: 1em;
   left: 1em; }
 
-.slides section.l-cover h1, .slides section.l-cover h2, .slides section.l-cover h3, .slides section.l-cover h4 {
-  text-align: left;
-  color: #fff; }
-
-.slides section.l-cover a {
-  color: #fff;
-  text-decoration: none; }
-
-.slides section.l-cover h2 {
-  font-size: 1.3em;
-  margin-top: 1em; }
-
-.slides section.l-cover em {
-  color: #3fa8e0; }
+.slides section.l-cover {
+  margin-top: 10%;
+  height: 90%; }
+  .slides section.l-cover h1 {
+    margin: 0; }
+  .slides section.l-cover h1, .slides section.l-cover h2, .slides section.l-cover h3, .slides section.l-cover h4 {
+    text-align: left;
+    color: #fff; }
+  .slides section.l-cover a {
+    color: #fff;
+    text-decoration: none; }
+  .slides section.l-cover h2 {
+    font-size: 1.3em;
+    margin-top: 0.75em;
+    margin-bottom: 1.25em; }
+  .slides section.l-cover em {
+    color: #3fa8e0; }
 
 .reveal .slide-background.l-agenda {
   background: url('data:image/svg+xml;utf8,<svg width="114" height="120" viewBox="0 0 114 120" fill="none" version="1.1" id="svg31" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><g id="g24"><g id="g12680" transform="matrix(0,-0.95617717,-0.94235801,0,114.07919,109.00515)"><path fill-rule="evenodd" clip-rule="evenodd" d="M 114,0 V 80.0113 L 73.9944,40.0056 Z" fill="%232A96A6" id="path18" style="fill:%2361b44b;fill-opacity:1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M 57.4248,56.5752 0.849639,0 H 114 Z" fill="%233A7CBE" id="path20" style="fill:%2346bcc0;fill-opacity:1"/><path d="M 73.996,39.9868 114.001,79.9915 73.996,119.996 33.9913,79.9915 Z" fill="%234bbabe" id="path22"/><path style="fill:%2369b978;fill-opacity:1;stroke-width:.137143" d="M 53.999823,99.94268 34.079999,80.022505 54.034286,60.068571 73.988571,40.114639 93.942857,60.068571 113.89714,80.022505 93.97732,99.94268 c -10.955903,10.9561 -19.95084,19.92018 -19.988749,19.92018 -0.03791,0 -9.032845,-8.96408 -19.988748,-19.92018 z" id="path432"/><path style="fill:%2369b978;fill-opacity:1;stroke-width:.137143" d="M 54.068393,99.874109 34.217142,80.022503 54.102857,60.137143 73.988571,40.251783 93.874286,60.137143 113.76,80.022503 93.90875,99.874109 C 82.990561,110.79249 74.02648,119.72571 73.988571,119.72571 c -0.03791,0 -9.00199,-8.93322 -19.920178,-19.851601 z" id="path1057"/></g></g></svg>') top right;
@@ -383,13 +389,12 @@
   justify-content: center; }
   .slides section.l-title h1, .slides section.l-title h2, .slides section.l-title h3, .slides section.l-title h4 {
     margin: 0;
-    text-align: center;
     color: #fff; }
   .slides section.l-title em {
     color: #1B2D53; }
   .slides section.l-title h2 {
     position: absolute;
-    top: 0;
+    top: 0.5em;
     left: 0;
     right: 0;
     font-size: 1.3em; }
@@ -408,13 +413,12 @@
   justify-content: center; }
   .slides section.l-title02 h1, .slides section.l-title02 h2, .slides section.l-title02 h3, .slides section.l-title02 h4 {
     margin: 0;
-    text-align: center;
     color: #fff; }
   .slides section.l-title02 em {
     color: #59a4dd; }
   .slides section.l-title02 h2 {
     position: absolute;
-    top: 0;
+    top: 0.5em;
     left: 0;
     right: 0;
     font-size: 1.3em; }
