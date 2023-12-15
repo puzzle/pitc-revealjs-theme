@@ -60,7 +60,6 @@ john@mail.com
 
 # You are the 
 # *Master!*
-----
 ```
 
 ---
@@ -83,7 +82,9 @@ john@mail.com
 Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 ```md
 <!-- .slide: id="unten" -->
-```Team---
+```
+
+---
 <!-- .slide: class="l-title" -->
 
 ## Thema 2
@@ -303,6 +304,15 @@ So ist die Folie gegliedert in Untertitel und Zwischentitel. Die Hierarchie hilf
 <div style="text-align: center">
   <img src="_assets/imgs/demo_image3.png" />
 </div>
+
+----
+
+```md
+## Bild & Titel
+<div style="text-align: center">
+  <img src="_assets/imgs/demo_image3.png" />
+</div>
+```
 
 ---
 <!-- .slide: class="l-thanks" -->
