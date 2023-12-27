@@ -87,7 +87,7 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 ---
 <!-- .slide: class="l-title" -->
 
-## Thema 2
+## Subthema 1
 
 # *Icons* rather
 # than text
@@ -104,7 +104,7 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 <!-- .slide: class="l-icons l-icons--big" -->
 
 # Titel
-### Icons findest du in unserer [Icon-Library](https://files.puzzle.ch/apps/files/?dir=/swe/P14_Kommunikation/08_Brand/_Design_Library/01_Icons/Icons_Library_Streamline/assets&fileid=5633521).
+#### Icons findest du in unserer [Icon-Library](https://files.puzzle.ch/apps/files/?dir=/swe/P14_Kommunikation/08_Brand/_Design_Library/01_Icons/Icons_Library_Streamline/assets&fileid=5633521).
 
 - ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
   - Sozialleistungen
@@ -118,7 +118,7 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 <!-- .slide: class="l-icons l-icons--big" -->
 
 # Titel
-### Icons findest du in unserer [Icon-Library](https://files.puzzle.ch/apps/files/?dir=/swe/P14_Kommunikation/08_Brand/_Design_Library/01_Icons/Icons_Library_Streamline/assets&fileid=5633521).
+#### Icons findest du in unserer [Icon-Library](https://files.puzzle.ch/apps/files/?dir=/swe/P14_Kommunikation/08_Brand/_Design_Library/01_Icons/Icons_Library_Streamline/assets&fileid=5633521).
 
 - ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
   - Sozialleistungen
@@ -131,7 +131,7 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 <!-- .slide: class="l-icons l-icons--big" -->
 
 # Titel
-### Untertitel
+#### Untertitel
 
 - ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
   - Sozialleistungen
@@ -148,7 +148,7 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 <!-- .slide: class="l-icons l-icons--big" -->
 
 # Titel
-### Untertitel
+#### Untertitel
 
 - ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
   - Sozialleistungen
@@ -166,13 +166,13 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 
 # Titel
 - ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
-  - ### Zwischentitel
+  - #### Zwischentitel
     Hier findest du verschiedene Möglichkeiten, wie du eine verschiedene Anzahl von Icons einsetzt.
 - ![lohn](_assets/imgs/icons/icon_lohn.svg)
-  - ### Zwischentitel
+  - #### Zwischentitel
     Icons mit Text oder nur einigen Stichwörtern – du wählst, was für dich und deine Präsentation passt.
 - ![ferien](_assets/imgs/icons/icon_ferien.svg)
-  - ### Zwischentitel
+  - #### Zwischentitel
     Auch hier gilt immer: Weniger ist mehr. Vielfach reicht ein Icon und ein Stichwort aus.
 ----
 ```md
@@ -321,9 +321,10 @@ So ist die Folie gegliedert in Untertitel und Zwischentitel. Die Hierarchie hilf
 Mehr Informationen zu Puzzle:
 www.puzzle.ch
 
-<br><br><br>
+<br><br><br><br><br>
 
-- ![](_assets/imgs/icons/icon_twitter.svg) @puzzleitc
+- ![](_assets/imgs/icons/icon_x.png) @puzzleitc
 - ![](_assets/imgs/icons/icon_linkedin.svg) @puzzleitc
+- ![](_assets/imgs/icons/icon_mastodon.png) @puzzle_itc
 - ![](_assets/imgs/icons/icon_instagram.svg) @puzzleitc
 - ![](_assets/imgs/icons/icon_github.svg) @puzzle

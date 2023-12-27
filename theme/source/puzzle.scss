@@ -42,7 +42,7 @@ $backgroundColor: #fff;
 
 // Primary/body text
 $mainFont: 'Roboto', sans-serif;
-$mainFontSize: 40px;
+$mainFontSize: 32px;
 $mainColor: #222;
 
 // Vertical spacing between blocks of text
@@ -121,6 +121,13 @@ $overlayElementFgColor: 0, 0, 0;
 
   h3, h4 {
     color: #729fcf;
+  }
+
+  // space for heading after anything other than a heading
+  *:not(h1, h2, h3, h4, h5, h6) {
+    & + h1, & + h2, & + h3, & + h4, & + h5, & + h6 {
+      margin-top: 1.5em;
+    }
   }
 }
 // END CONTENT
@@ -361,6 +368,7 @@ $overlayElementFgColor: 0, 0, 0;
     > ul > li {
       flex-direction: column;
       justify-content: center;
+      font-size: 1.5rem;
 
       img {
         max-width: 150px;
