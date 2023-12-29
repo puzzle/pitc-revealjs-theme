@@ -479,7 +479,7 @@
   top: 0.5em;
   left: 0;
   right: 0;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .reveal .slide-background.l-title02 {
@@ -577,7 +577,7 @@
   margin: 0;
 }
 .slides section.l-icons > ul > li {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   list-style: none;
   display: flex;
   align-items: center;
@@ -599,7 +599,6 @@
 .slides section.l-icons.l-icons--big > ul > li {
   flex-direction: column;
   justify-content: center;
-  font-size: 1.5rem;
 }
 .slides section.l-icons.l-icons--big > ul > li img {
   max-width: 150px;

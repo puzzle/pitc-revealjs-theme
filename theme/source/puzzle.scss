@@ -226,7 +226,7 @@ $overlayElementFgColor: 0, 0, 0;
     top: 0.5em;
     left: 0;
     right: 0;
-    font-size: $heading4Size;
+    font-size: $heading3Size;
   }
 }
 // END TITLE
@@ -341,7 +341,7 @@ $overlayElementFgColor: 0, 0, 0;
         // Make sure to use a nested list in markdown, so that the elements
         // after the first image are grouped together.
         > li {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             list-style: none;
             display: flex;
             align-items: center;
@@ -356,6 +356,7 @@ $overlayElementFgColor: 0, 0, 0;
                 margin-right: 30px;
             }
         }
+
         h1, p, ul {
             margin: 0;
         }
@@ -368,7 +369,6 @@ $overlayElementFgColor: 0, 0, 0;
     > ul > li {
       flex-direction: column;
       justify-content: center;
-      font-size: 1.5rem;
 
       img {
         max-width: 150px;
