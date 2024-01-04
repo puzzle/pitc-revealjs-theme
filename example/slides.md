@@ -21,21 +21,27 @@ john@mail.com
 - Overview
 
 ---
-<!-- .slide: class="l-people" -->
+<!-- .slide: class="l-icons" -->
 
 # Nice to meet you
 
 - ![](https://randomuser.me/api/portraits/men/73.jpg)
-  # John Doe
-  Head of Business
-  Division Zürich
-  john@email.com
+  - # John Doe
+    Head of Business
+    Division Zürich
+    john@email.com
 
 - ![](https://randomuser.me/api/portraits/women/52.jpg)
-  # Jane Roe
-  Chief Communications,
-  Marketing & Sales
-  jane@email.com
+  - # Jane Roe
+    Chief Communications,
+    Marketing & Sales
+    jane@email.com
+
+- ![](https://randomuser.me/api/portraits/women/48.jpg)
+  - # Jane Roe
+    Chief Communications,
+    Marketing & Sales
+    jane@email.com
 
 ---
 <!-- .slide: class="l-title" -->
