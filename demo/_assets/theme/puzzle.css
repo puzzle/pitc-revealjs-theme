@@ -34,8 +34,6 @@
   --r-link-color-hover: #111;
   --r-selection-background-color: #69B978;
   --r-selection-color: #fff;
-  --r-overlay-element-bg-color: 240, 240, 240;
-  --r-overlay-element-fg-color: 0, 0, 0;
 }
 
 .reveal-viewport {
