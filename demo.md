@@ -46,6 +46,37 @@ john@mail.com
 - Bilder
 ```
 ---
+<!-- .slide: class="l-team l-icons--big" -->
+
+# Nice to meet you
+- ![Martin Gafner](_assets/imgs/martin_gafner.png)
+  - Martin Gafner
+  - Key Account Manager
+  - gafner@puzzle.ch
+- ![Simon Fankhauser](_assets/imgs/simon_fankhauser.png)
+  - Simon Fankhauser
+  - Head of Business Division Zürich
+  - fankhauser@puzzle.ch
+- ![Anna Pfeifhofer](_assets/imgs/anna_pfeifhofer.png)
+  - Anna Pfeifhofer
+  - Co-Lead /cicd & /container
+  - pfeifhofer@puzzle.ch
+
+### Alle Puzzlers
+#### https://www.puzzle.ch/de/team
+----
+```md
+<!-- .slide: class="l-agenda" -->
+
+# Agenda
+
+- Masteransicht	
+- Icons
+- Content mit/ohne Bullet Points
+- Bilder
+```
+---
+
 <!-- .slide: class="l-title02" -->
 
 ## Thema 1
@@ -85,15 +116,32 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 ```
 
 ---
-<!-- .slide: class="l-title" -->
+<!-- .slide: class="l-title02" -->
 
-## Subthema 1
+## Thema 2
 
 # *Icons* rather
 # than text
 ----
 ```md
-<!-- .slide: class="l-title" -->
+<!-- .slide: class="l-title02" -->
+
+## Thema 2
+
+# *Icons* rather
+# than text
+```
+
+---
+<!-- .slide: class="l-title02" -->
+
+## Thema 2
+
+# *Icons* rather
+# than text
+----
+```md
+<!-- .slide: class="l-title02" -->
 
 ## Thema 2
 

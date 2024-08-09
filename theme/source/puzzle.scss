@@ -129,6 +129,10 @@ $overlayElementFgColor: 0, 0, 0;
     }
   }
 }
+
+.slides section img {
+  border-radius: 40px;
+}
 // END CONTENT
 
 // COVER
@@ -203,9 +207,72 @@ $overlayElementFgColor: 0, 0, 0;
 }
 // END AGENDA
 
+// TEAM
+.reveal .slide-background.l-team {
+  background: rgb(97,180,75);
+  background: linear-gradient(0deg, rgba(97,180,75,1) 0%, rgba(97,180,75,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+
+.reveal section.l-team:not(.slide) {
+  background-color: #3b7bbe;
+  border-radius: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  height: 100%;
+
+  img {
+    border-radius: 100%;
+    max-width: initial;
+    width: clamp(150px, 15vw, 250px);
+  }
+
+  ul > li > ul > li {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1em;
+
+    &:nth-child(2) {
+      font-size: 0.9em;
+    }
+
+    &:nth-child(3) {
+      font-size: 0.7em;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+// END TEAM
+
 // TITLE
 .reveal .slide-background.l-title {
-  background-color: #3fa8e0;
+  background-color: #61b44b;
 }
 .slides section.l-title  {
   top: 0 !important;
@@ -301,7 +368,9 @@ $overlayElementFgColor: 0, 0, 0;
   background-color: #1B2D53;
   background-repeat: no-repeat;
 }
-.slides section.l-thanks {
+.slides section.l-thanks:not(.slide) {
+  height: 100%;
+
   h1, h2, h3, h4 {
     color: #fff;
   }
@@ -309,9 +378,13 @@ $overlayElementFgColor: 0, 0, 0;
     color: #fff;
   }
   ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 22px;
     list-style: none;
     margin: 0;
     background-color: white;
@@ -325,7 +398,7 @@ $overlayElementFgColor: 0, 0, 0;
       align-items: center;
       gap: 0.5rem;
       img {
-        height: 40px;
+        height: 50px;
       }
     }
 
@@ -335,7 +408,7 @@ $overlayElementFgColor: 0, 0, 0;
 // END THANKS
 
 // START ICONS
-.slides section.l-icons {
+.slides section.l-icons, section.l-team {
     > ul {
         display: grid;
         // Change to 3 for three columns
