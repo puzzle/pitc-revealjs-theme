@@ -46,6 +46,37 @@ john@mail.com
 - Bilder
 ```
 ---
+<!-- .slide: class="l-team l-icons--big" -->
+
+# Nice to meet you
+- ![Martin Gafner](_assets/imgs/martin_gafner.png)
+  - Martin Gafner
+  - Key Account Manager
+  - gafner@puzzle.ch
+- ![Simon Fankhauser](_assets/imgs/simon_fankhauser.png)
+  - Simon Fankhauser
+  - Head of Business Division Zürich
+  - fankhauser@puzzle.ch
+- ![Anna Pfeifhofer](_assets/imgs/anna_pfeifhofer.png)
+  - Anna Pfeifhofer
+  - Co-Lead /cicd & /container
+  - pfeifhofer@puzzle.ch
+
+### Alle Puzzlers
+#### https://www.puzzle.ch/de/team
+----
+```md
+<!-- .slide: class="l-agenda" -->
+
+# Agenda
+
+- Masteransicht	
+- Icons
+- Content mit/ohne Bullet Points
+- Bilder
+```
+---
+
 <!-- .slide: class="l-title02" -->
 
 ## Thema 1
@@ -85,32 +116,33 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 ```
 
 ---
-<!-- .slide: class="l-title" -->
+<!-- .slide: class="l-title02" -->
 
-## Subthema 1
+## Thema 2
 
 # *Icons* rather
 # than text
 ----
 ```md
-<!-- .slide: class="l-title" -->
+<!-- .slide: class="l-title02" -->
 
 ## Thema 2
 
 # *Icons* rather
 # than text
 ```
+
 ---
 <!-- .slide: class="l-icons l-icons--big" -->
 
 # Titel
 #### Icons findest du in unserer [Icon-Library](https://files.puzzle.ch/apps/files/?dir=/swe/P14_Kommunikation/08_Brand/_Design_Library/01_Icons/Icons_Library_Streamline/assets&fileid=5633521).
 
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
   - Sozialleistungen
-- ![lohn](_assets/imgs/icons/icon_lohn.svg)
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
   - Lohn
-- ![ferien](_assets/imgs/icons/icon_ferien.svg)
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
   - Ferien
 
 ----
@@ -120,11 +152,11 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 # Titel
 #### Icons findest du in unserer [Icon-Library](https://files.puzzle.ch/apps/files/?dir=/swe/P14_Kommunikation/08_Brand/_Design_Library/01_Icons/Icons_Library_Streamline/assets&fileid=5633521).
 
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
   - Sozialleistungen
-- ![lohn](_assets/imgs/icons/icon_lohn.svg)
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
   - Lohn
-- ![ferien](_assets/imgs/icons/icon_ferien.svg)
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
   - Ferien
 ```
 ---
@@ -133,15 +165,15 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 # Titel
 #### Untertitel
 
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
   - Sozialleistungen
-- ![lohn](_assets/imgs/icons/icon_lohn.svg)
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
   - Lohn
-- ![ferien](_assets/imgs/icons/icon_ferien.svg)
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
   - Ferien
-- ![abos](_assets/imgs/icons/icon_abos.svg)
+- ![abos](_assets/imgs/icons/icon_abos.png)
   - Abos
-- ![firmentreue](_assets/imgs/icons/icon_firmentreue.svg)
+- ![firmentreue](_assets/imgs/icons/icon_firmentreue.png)
   - Firmentreue
 ----
 ```md
@@ -150,28 +182,28 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 # Titel
 #### Untertitel
 
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
   - Sozialleistungen
-- ![lohn](_assets/imgs/icons/icon_lohn.svg)
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
   - Lohn
-- ![ferien](_assets/imgs/icons/icon_ferien.svg)
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
   - Ferien
-- ![abos](_assets/imgs/icons/icon_abos.svg)
+- ![abos](_assets/imgs/icons/icon_abos.png)
   - Abos
-- ![firmentreue](_assets/imgs/icons/icon_firmentreue.svg)
+- ![firmentreue](_assets/imgs/icons/icon_firmentreue.png)
   - Firmentreue
 ```
 ---
 <!-- .slide: class="l-icons l-icons--list" -->
 
 # Titel
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
   - #### Zwischentitel
     Hier findest du verschiedene Möglichkeiten, wie du eine verschiedene Anzahl von Icons einsetzt.
-- ![lohn](_assets/imgs/icons/icon_lohn.svg)
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
   - #### Zwischentitel
     Icons mit Text oder nur einigen Stichwörtern – du wählst, was für dich und deine Präsentation passt.
-- ![ferien](_assets/imgs/icons/icon_ferien.svg)
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
   - #### Zwischentitel
     Auch hier gilt immer: Weniger ist mehr. Vielfach reicht ein Icon und ein Stichwort aus.
 ----
@@ -179,13 +211,13 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 <!-- .slide: class="l-icons l-icons--list" -->
 
 # Titel
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.svg)
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
   - ### Zwischentitel
     Hier findest du verschiedene Möglichkeiten, wie du eine verschiedene Anzahl von Icons einsetzt.
-- ![lohn](_assets/imgs/icons/icon_lohn.svg)
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
   - ### Zwischentitel
     Icons mit Text oder nur einigen Stichwörtern – du wählst, was für dich und deine Präsentation passt.
-- ![ferien](_assets/imgs/icons/icon_ferien.svg)
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
   - ### Zwischentitel
     Auch hier gilt immer: Weniger ist mehr. Vielfach reicht ein Icon und ein Stichwort aus.
 ```
@@ -313,8 +345,58 @@ So ist die Folie gegliedert in Untertitel und Zwischentitel. Die Hierarchie hilf
   <img src="_assets/imgs/demo_image3.png" />
 </div>
 ```
-
 ---
+
+<!-- .slide: class="l-title02" -->
+
+## Thema 4
+
+# show
+# *logos*
+----
+```md
+<!-- .slide: class="l-title02" -->
+
+## Thema 4
+
+# show
+# *logos*
+```
+---
+<!-- .slide: class="l-logos" -->
+
+## Logos aufführen
+
+- ![sozialleistungen](_assets/imgs/icons/IGE_Logo.svg)
+- 
+- 
+- 
+- 
+-
+-
+-
+-
+-
+----
+```md
+<!-- .slide: class="l-logos" -->
+
+# Titel
+#### Untertitel
+
+- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
+  - Sozialleistungen
+- ![lohn](_assets/imgs/icons/icon_lohn.png)
+  - Lohn
+- ![ferien](_assets/imgs/icons/icon_ferien.png)
+  - Ferien
+- ![abos](_assets/imgs/icons/icon_abos.png)
+  - Abos
+- ![firmentreue](_assets/imgs/icons/icon_firmentreue.png)
+  - Firmentreue
+```
+---
+
 <!-- .slide: class="l-thanks" -->
 
 # Merci
