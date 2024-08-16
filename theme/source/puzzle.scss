@@ -361,12 +361,45 @@ $overlayElementFgColor: 0, 0, 0;
 }
 // END TEAM & TEAM2
 
+// LOGOS
+.slides section.l-logos {
+
+  ul {
+    background-color: #1B2D53;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    padding-bottom: 75px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    img {
+      margin: 0;
+      border-radius: 0;
+    }
+
+    li {
+      background-color: white;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+
+      // min-height: 50px;
+      // min-width: 50px;
+    }
+  }
+
+}
+
 // THANKS
 .reveal .slide-background.l-thanks {
-  background: url("data:image/png;base64,#{$tangram01}") bottom right;
-  background-size: auto 400px;
   background-color: #1B2D53;
-  background-repeat: no-repeat;
 }
 .slides section.l-thanks:not(.slide) {
   height: 100%;
