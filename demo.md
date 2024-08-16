@@ -380,20 +380,17 @@ So ist die Folie gegliedert in Untertitel und Zwischentitel. Die Hierarchie hilf
 ----
 ```md
 <!-- .slide: class="l-logos" -->
-
-# Titel
-#### Untertitel
-
-- ![sozialleistungen](_assets/imgs/icons/icon_sozialleistungen.png)
-  - Sozialleistungen
-- ![lohn](_assets/imgs/icons/icon_lohn.png)
-  - Lohn
-- ![ferien](_assets/imgs/icons/icon_ferien.png)
-  - Ferien
-- ![abos](_assets/imgs/icons/icon_abos.png)
-  - Abos
-- ![firmentreue](_assets/imgs/icons/icon_firmentreue.png)
-  - Firmentreue
+## Logos aufführen
+- ![sozialleistungen](_assets/imgs/icons/IGE_Logo.svg)
+- 
+- 
+- 
+- 
+-
+-
+-
+-
+-
 ```
 ---
 
