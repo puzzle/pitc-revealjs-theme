@@ -117,6 +117,40 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 ```
 
 ---
+<!-- .slide: class="l-title" -->
+
+## Subthema 1
+
+# Hintergründe
+# deiner *Wahl*
+----
+```md
+## Subthema 1
+
+# Hintergründe
+# deiner *Wahl*
+```
+
+---
+<!-- .slide: class="l-split" -->
+
+<!-- <div class="left" data-markdown> -->
+  # Welche <br> Folie <br> *gefällt dir?*
+
+  - Bei dieser Folie hast du die Möglichkeit, Stichwörter einzusetzen.
+  - Du kannst Text mittels Bullet Points aufführen.
+  - Diese Slide hilft dir, Text zu vertonen.
+  - Aber Achtung: Bullet Points solltest du nicht zu oft einsetzen.
+
+----
+```md
+## Subthema 1
+
+# Hintergründe
+# deiner *Wahl*
+```
+
+---
 <!-- .slide: class="l-title02" -->
 
 ## Thema 2
@@ -397,14 +431,9 @@ So ist die Folie gegliedert in Untertitel und Zwischentitel. Die Hierarchie hilf
 
 <!-- .slide: class="l-thanks" -->
 
-# Merci
+# Merci!
 Mehr Informationen zu Puzzle:
-www.puzzle.ch
+[www.puzzle.ch](https://puzzle.ch)
 
-<br><br><br><br><br>
-
-- ![](_assets/imgs/icons/icon_x.png) @puzzleitc
-- ![](_assets/imgs/icons/icon_linkedin.svg) @puzzleitc
-- ![](_assets/imgs/icons/icon_mastodon.png) @puzzle_itc
-- ![](_assets/imgs/icons/icon_instagram.svg) @puzzleitc
-- ![](_assets/imgs/icons/icon_github.svg) @puzzle
+- ![](_assets/imgs/icons/icon_linkedin.svg)
+- ![](_assets/imgs/icons/icon_github.svg)
