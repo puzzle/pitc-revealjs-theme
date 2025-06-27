@@ -134,8 +134,7 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 ---
 <!-- .slide: class="l-split" -->
 
-<!-- <div class="left" data-markdown> -->
-  # Welche <br> Folie <br> *gefällt dir?*
+# Welche <br> Folie <br> *gefällt dir?*
 
   - Bei dieser Folie hast du die Möglichkeit, Stichwörter einzusetzen.
   - Du kannst Text mittels Bullet Points aufführen.
@@ -144,10 +143,12 @@ Damit der Link funktioniert wurde auf dieser unteren Folie folgendes definiert:
 
 ----
 ```md
-## Subthema 1
+# Welche <br> Folie <br> *gefällt dir?*
 
-# Hintergründe
-# deiner *Wahl*
+  - Bei dieser Folie hast du die Möglichkeit, Stichwörter einzusetzen.
+  - Du kannst Text mittels Bullet Points aufführen.
+  - Diese Slide hilft dir, Text zu vertonen.
+  - Aber Achtung: Bullet Points solltest du nicht zu oft einsetzen.
 ```
 
 ---
