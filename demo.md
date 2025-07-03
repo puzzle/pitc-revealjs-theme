@@ -368,21 +368,6 @@ So ist die Folie gegliedert in Untertitel und Zwischentitel. Die Hierarchie hilf
 ```
 ---
 
-## Bild & Titel
-<div style="text-align: center">
-  <img src="_assets/imgs/demo_image3.png" />
-</div>
-
-----
-
-```md
-## Bild & Titel
-<div style="text-align: center">
-  <img src="_assets/imgs/demo_image3.png" />
-</div>
-```
----
-
 <!-- .slide: class="l-title02" -->
 
 ## Thema 4
